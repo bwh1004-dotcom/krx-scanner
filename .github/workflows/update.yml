@@ -24,7 +24,7 @@ jobs:
           python-version: '3.11'
 
       - name: 📦 의존성 설치
-        run: pip install pykrx pandas
+        run: pip install -r requirements.txt
 
       - name: 🔄 데이터 수집 & 분석
         run: python scripts/fetch_data.py
