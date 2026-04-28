@@ -172,7 +172,10 @@ def analyze(history, trading_dates, listings):
         if is_52w_high:
             consecutive = count_consecutive(ticker, history, trading_dates)
             first_idx = len(trading_dates) - consecutive
-            first_date = trading_dates[first_idx] if first_idx >= 0 else today
+            try:
+                first_date = trading_dates[first_idx] if 0 <= first_idx < len(trading_dates) else today
+            except IndexError:
+                first_date = today
             highs.append({
                 'code': ticker,
                 'name': name,
