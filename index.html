@@ -25,6 +25,7 @@
     --green:    #00d4aa;
     --kospi:    #5b9ef0;
     --kosdaq:   #c678f0;
+    --orange:   #ff9f43;
   }
 
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -37,7 +38,6 @@
     overflow-x: hidden;
   }
 
-  /* ── 배경 그리드 효과 ── */
   body::before {
     content: '';
     position: fixed;
@@ -50,9 +50,9 @@
     z-index: 0;
   }
 
-  /* ── 헤더 ── */
   header {
-    position: relative;
+    position: sticky;
+    top: 0;
     z-index: 10;
     padding: 24px 28px 20px;
     border-bottom: 1px solid var(--border);
@@ -61,8 +61,6 @@
     justify-content: space-between;
     background: rgba(10,12,16,.9);
     backdrop-filter: blur(10px);
-    position: sticky;
-    top: 0;
   }
 
   .logo {
@@ -83,13 +81,11 @@
   }
   .update-info .date { color: var(--accent); font-size: 12px; }
 
-  /* ── 통계 카드 ── */
   .stats-bar {
     position: relative;
     z-index: 5;
     display: flex;
     gap: 1px;
-    padding: 0;
     background: var(--border);
     border-bottom: 1px solid var(--border);
   }
@@ -101,7 +97,7 @@
     text-align: center;
     cursor: pointer;
     transition: background .15s;
-    min-width: 100px;
+    min-width: 80px;
   }
   .stat-card:hover { background: #161a24; }
   .stat-card.active { background: #0f1520; border-bottom: 2px solid var(--accent); }
@@ -113,10 +109,11 @@
     line-height: 1;
     color: #fff;
   }
-  .stat-num.high  { color: var(--gold); }
-  .stat-num.red   { color: var(--red); }
-  .stat-num.blue  { color: var(--blue); }
-  .stat-num.green { color: var(--green); }
+  .stat-num.high   { color: var(--gold); }
+  .stat-num.red    { color: var(--red); }
+  .stat-num.blue   { color: var(--blue); }
+  .stat-num.green  { color: var(--green); }
+  .stat-num.orange { color: var(--orange); }
 
   .stat-label {
     font-size: 11px;
@@ -125,7 +122,6 @@
     letter-spacing: .5px;
   }
 
-  /* ── 컨트롤 영역 ── */
   .controls {
     position: relative;
     z-index: 5;
@@ -159,10 +155,7 @@
   .btn.kospi.active  { background: var(--kospi); border-color: var(--kospi); color: #fff; }
   .btn.kosdaq.active { background: var(--kosdaq); border-color: var(--kosdaq); color: #fff; }
 
-  .search-wrap {
-    margin-left: auto;
-    position: relative;
-  }
+  .search-wrap { margin-left: auto; position: relative; }
   .search-input {
     font-family: 'JetBrains Mono', monospace;
     font-size: 12px;
@@ -185,7 +178,6 @@
     font-size: 12px;
   }
 
-  /* ── 메인 콘텐츠 ── */
   .content {
     position: relative;
     z-index: 5;
@@ -195,7 +187,6 @@
   .tab-panel { display: none; }
   .tab-panel.active { display: block; }
 
-  /* ── 테이블 ── */
   .table-wrap {
     overflow-x: auto;
     border: 1px solid var(--border);
@@ -203,11 +194,7 @@
     background: var(--surface);
   }
 
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 13px;
-  }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
 
   thead th {
     font-family: 'JetBrains Mono', monospace;
@@ -234,20 +221,10 @@
   tbody tr:last-child { border-bottom: none; }
   tbody tr:hover { background: rgba(0,212,170,.04); }
 
-  td {
-    padding: 11px 16px;
-    white-space: nowrap;
-  }
+  td { padding: 11px 16px; white-space: nowrap; }
 
-  .ticker-code {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 11px;
-    color: var(--muted);
-  }
-  .ticker-name {
-    font-weight: 500;
-    color: #e0e4ef;
-  }
+  .ticker-code { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--muted); }
+  .ticker-name { font-weight: 500; color: #e0e4ef; }
 
   .badge {
     display: inline-block;
@@ -268,7 +245,6 @@
   .num-red   { color: var(--red); }
   .num-blue  { color: var(--blue); }
 
-  /* 연속 신고가 뱃지 */
   .streak {
     display: inline-flex;
     align-items: center;
@@ -279,39 +255,35 @@
   }
   .streak-fire { font-size: 14px; }
 
-  /* 거래량 비율 바 */
-  .vol-bar-wrap {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    min-width: 120px;
-  }
-  .vol-bar-bg {
-    flex: 1;
-    height: 4px;
-    background: var(--border);
-    border-radius: 2px;
-    overflow: hidden;
-  }
-  .vol-bar-fill {
-    height: 100%;
-    border-radius: 2px;
-    background: var(--accent2);
-    transition: width .3s;
-  }
-  .vol-ratio-text {
+  .vol-bar-wrap { display: flex; align-items: center; gap: 8px; min-width: 120px; }
+  .vol-bar-bg { flex: 1; height: 4px; background: var(--border); border-radius: 2px; overflow: hidden; }
+  .vol-bar-fill { height: 100%; border-radius: 2px; background: var(--accent2); transition: width .3s; }
+  .vol-ratio-text { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--accent2); min-width: 40px; }
+
+  tbody tr.both-highlight td:first-child { border-left: 3px solid var(--gold); }
+
+  /* ── 재무안정성 별점 ── */
+  .stars { font-size: 13px; letter-spacing: 1px; }
+  .stars-5 { color: #f5c842; }
+  .stars-4 { color: #f5c842; }
+  .stars-3 { color: #ff9f43; }
+  .stars-2 { color: #ff6b35; }
+  .stars-1 { color: #ff4757; }
+  .stars-0 { color: var(--muted); }
+
+  /* 재무안정성 탭 날짜 표시 */
+  .fin-date-badge {
+    display: inline-block;
     font-family: 'JetBrains Mono', monospace;
-    font-size: 12px;
-    color: var(--accent2);
-    min-width: 40px;
+    font-size: 10px;
+    padding: 3px 8px;
+    border-radius: 4px;
+    background: rgba(255,159,67,.1);
+    color: var(--orange);
+    border: 1px solid rgba(255,159,67,.3);
+    margin-bottom: 12px;
   }
 
-  /* 신고가 + 거래량 강조 */
-  tbody tr.both-highlight td:first-child {
-    border-left: 3px solid var(--gold);
-  }
-
-  /* ── 빈 상태 ── */
   .empty {
     text-align: center;
     padding: 60px 20px;
@@ -321,7 +293,6 @@
   .empty-title { font-size: 15px; color: var(--text); margin-bottom: 8px; }
   .empty-desc  { font-size: 12px; font-family: 'JetBrains Mono', monospace; }
 
-  /* ── 로딩 ── */
   #loading {
     position: fixed;
     inset: 0;
@@ -348,11 +319,10 @@
     letter-spacing: 2px;
   }
 
-  /* ── 반응형 ── */
   @media (max-width: 768px) {
     header { padding: 16px 16px 14px; }
     .stats-bar { flex-wrap: wrap; }
-    .stat-card { min-width: calc(50% - 1px); }
+    .stat-card { min-width: calc(33% - 1px); }
     .controls { padding: 12px 16px; }
     .content { padding: 16px 16px 40px; }
     .search-wrap { margin-left: 0; }
@@ -362,13 +332,11 @@
 </head>
 <body>
 
-<!-- 로딩 -->
 <div id="loading">
   <div class="loader"></div>
   <div class="load-text">LOADING...</div>
 </div>
 
-<!-- 헤더 -->
 <header>
   <div>
     <div class="logo">UNO<span>_</span>SCANNER</div>
@@ -380,7 +348,7 @@
   </div>
 </header>
 
-<!-- 통계 카드 -->
+<!-- 통계 카드 (6개) -->
 <div class="stats-bar">
   <div class="stat-card active" onclick="switchTab('highs')" id="tab-btn-highs">
     <div class="stat-num high" id="s-highs">—</div>
@@ -391,7 +359,7 @@
     <div class="stat-label">연속 2회+</div>
   </div>
   <div class="stat-card" onclick="switchTab('consecutive3')" id="tab-btn-consecutive3">
-    <div class="stat-num gold" id="s-con3" style="color:var(--gold)">—</div>
+    <div class="stat-num" style="color:var(--gold)" id="s-con3">—</div>
     <div class="stat-label">연속 3회+</div>
   </div>
   <div class="stat-card" onclick="switchTab('volume')" id="tab-btn-volume">
@@ -401,6 +369,14 @@
   <div class="stat-card" onclick="switchTab('both')" id="tab-btn-both">
     <div class="stat-num green" id="s-both">—</div>
     <div class="stat-label">신고가+거래량</div>
+  </div>
+  <div class="stat-card" onclick="switchTab('financial')" id="tab-btn-financial">
+    <div class="stat-num orange" id="s-fin">★★★+</div>
+    <div class="stat-label">재무안정성</div>
+  </div>
+  <div class="stat-card" onclick="switchTab('buffett')" id="tab-btn-buffett">
+    <div class="stat-num" style="color:#e056fd" id="s-buffett">—</div>
+    <div class="stat-label">버핏지수</div>
   </div>
 </div>
 
@@ -419,25 +395,22 @@
   </div>
 </div>
 
-<!-- 콘텐츠 -->
 <div class="content">
 
   <!-- 탭: 52주 신고가 -->
   <div class="tab-panel active" id="tab-highs">
     <div class="table-wrap">
       <table id="tbl-highs">
-        <thead>
-          <tr>
-            <th onclick="sortTable('tbl-highs','name',0)">종목</th>
-            <th onclick="sortTable('tbl-highs','close',1)">현재가</th>
-            <th onclick="sortTable('tbl-highs','prev_52w_high',2)">직전 52주 고가</th>
-            <th onclick="sortTable('tbl-highs','breakout_pct',3)">돌파율</th>
-            <th onclick="sortTable('tbl-highs','consecutive',4)">연속</th>
-            <th onclick="sortTable('tbl-highs','first_high_date',5)">첫 신고가</th>
-            <th onclick="sortTable('tbl-highs','days_since_first',6)">경과일</th>
-            <th onclick="sortTable('tbl-highs','volume',7)">거래량</th>
-          </tr>
-        </thead>
+        <thead><tr>
+          <th onclick="sortTable('tbl-highs','name',0)">종목</th>
+          <th onclick="sortTable('tbl-highs','close',1)">현재가</th>
+          <th onclick="sortTable('tbl-highs','prev_52w_high',2)">직전 52주 고가</th>
+          <th onclick="sortTable('tbl-highs','breakout_pct',3)">돌파율</th>
+          <th onclick="sortTable('tbl-highs','consecutive',4)">연속</th>
+          <th onclick="sortTable('tbl-highs','first_high_date',5)">첫 신고가</th>
+          <th onclick="sortTable('tbl-highs','days_since_first',6)">경과일</th>
+          <th onclick="sortTable('tbl-highs','volume',7)">거래량</th>
+        </tr></thead>
         <tbody id="body-highs"></tbody>
       </table>
     </div>
@@ -447,17 +420,15 @@
   <div class="tab-panel" id="tab-consecutive2">
     <div class="table-wrap">
       <table id="tbl-con2">
-        <thead>
-          <tr>
-            <th onclick="sortTable('tbl-con2','name',0)">종목</th>
-            <th onclick="sortTable('tbl-con2','close',1)">현재가</th>
-            <th onclick="sortTable('tbl-con2','breakout_pct',2)">돌파율</th>
-            <th onclick="sortTable('tbl-con2','consecutive',3)">연속 일수</th>
-            <th onclick="sortTable('tbl-con2','first_high_date',4)">첫 신고가</th>
-            <th onclick="sortTable('tbl-con2','days_since_first',5)">경과일</th>
-            <th onclick="sortTable('tbl-con2','volume',6)">거래량</th>
-          </tr>
-        </thead>
+        <thead><tr>
+          <th onclick="sortTable('tbl-con2','name',0)">종목</th>
+          <th onclick="sortTable('tbl-con2','close',1)">현재가</th>
+          <th onclick="sortTable('tbl-con2','breakout_pct',2)">돌파율</th>
+          <th onclick="sortTable('tbl-con2','consecutive',3)">연속 일수</th>
+          <th onclick="sortTable('tbl-con2','first_high_date',4)">첫 신고가</th>
+          <th onclick="sortTable('tbl-con2','days_since_first',5)">경과일</th>
+          <th onclick="sortTable('tbl-con2','volume',6)">거래량</th>
+        </tr></thead>
         <tbody id="body-con2"></tbody>
       </table>
     </div>
@@ -467,17 +438,15 @@
   <div class="tab-panel" id="tab-consecutive3">
     <div class="table-wrap">
       <table id="tbl-con3">
-        <thead>
-          <tr>
-            <th onclick="sortTable('tbl-con3','name',0)">종목</th>
-            <th onclick="sortTable('tbl-con3','close',1)">현재가</th>
-            <th onclick="sortTable('tbl-con3','breakout_pct',2)">돌파율</th>
-            <th onclick="sortTable('tbl-con3','consecutive',3)">연속 일수</th>
-            <th onclick="sortTable('tbl-con3','first_high_date',4)">첫 신고가</th>
-            <th onclick="sortTable('tbl-con3','days_since_first',5)">경과일</th>
-            <th onclick="sortTable('tbl-con3','volume',6)">거래량</th>
-          </tr>
-        </thead>
+        <thead><tr>
+          <th onclick="sortTable('tbl-con3','name',0)">종목</th>
+          <th onclick="sortTable('tbl-con3','close',1)">현재가</th>
+          <th onclick="sortTable('tbl-con3','breakout_pct',2)">돌파율</th>
+          <th onclick="sortTable('tbl-con3','consecutive',3)">연속 일수</th>
+          <th onclick="sortTable('tbl-con3','first_high_date',4)">첫 신고가</th>
+          <th onclick="sortTable('tbl-con3','days_since_first',5)">경과일</th>
+          <th onclick="sortTable('tbl-con3','volume',6)">거래량</th>
+        </tr></thead>
         <tbody id="body-con3"></tbody>
       </table>
     </div>
@@ -487,16 +456,14 @@
   <div class="tab-panel" id="tab-volume">
     <div class="table-wrap">
       <table id="tbl-vol">
-        <thead>
-          <tr>
-            <th onclick="sortTable('tbl-vol','name',0)">종목</th>
-            <th onclick="sortTable('tbl-vol','close',1)">현재가</th>
-            <th onclick="sortTable('tbl-vol','vol_ratio',2)">거래량 비율</th>
-            <th onclick="sortTable('tbl-vol','volume',3)">오늘 거래량</th>
-            <th onclick="sortTable('tbl-vol','avg_vol_20d',4)">20일 평균</th>
-            <th onclick="sortTable('tbl-vol','is_52w_high',5)">신고가 여부</th>
-          </tr>
-        </thead>
+        <thead><tr>
+          <th onclick="sortTable('tbl-vol','name',0)">종목</th>
+          <th onclick="sortTable('tbl-vol','close',1)">현재가</th>
+          <th onclick="sortTable('tbl-vol','vol_ratio',2)">거래량 비율</th>
+          <th onclick="sortTable('tbl-vol','volume',3)">오늘 거래량</th>
+          <th onclick="sortTable('tbl-vol','avg_vol_20d',4)">20일 평균</th>
+          <th onclick="sortTable('tbl-vol','is_52w_high',5)">신고가 여부</th>
+        </tr></thead>
         <tbody id="body-vol"></tbody>
       </table>
     </div>
@@ -506,52 +473,95 @@
   <div class="tab-panel" id="tab-both">
     <div class="table-wrap">
       <table id="tbl-both">
-        <thead>
-          <tr>
-            <th onclick="sortTable('tbl-both','name',0)">종목</th>
-            <th onclick="sortTable('tbl-both','close',1)">현재가</th>
-            <th onclick="sortTable('tbl-both','vol_ratio',2)">거래량 비율</th>
-            <th onclick="sortTable('tbl-both','volume',3)">오늘 거래량</th>
-            <th onclick="sortTable('tbl-both','avg_vol_20d',4)">20일 평균</th>
-          </tr>
-        </thead>
+        <thead><tr>
+          <th onclick="sortTable('tbl-both','name',0)">종목</th>
+          <th onclick="sortTable('tbl-both','close',1)">현재가</th>
+          <th onclick="sortTable('tbl-both','vol_ratio',2)">거래량 비율</th>
+          <th onclick="sortTable('tbl-both','volume',3)">오늘 거래량</th>
+          <th onclick="sortTable('tbl-both','avg_vol_20d',4)">20일 평균</th>
+        </tr></thead>
         <tbody id="body-both"></tbody>
       </table>
+    </div>
+  </div>
+
+  <!-- 탭: 재무안정성 -->
+  <div class="tab-panel" id="tab-financial">
+    <div id="fin-date-wrap"></div>
+
+    <!-- 52주 신고가 재무안정성 -->
+    <div style="margin-bottom:8px;font-size:12px;color:var(--orange);font-weight:600;letter-spacing:1px;">
+      📈 52주 신고가 종목
+    </div>
+    <div class="table-wrap" style="margin-bottom:28px;">
+      <table id="tbl-fin-high">
+        <thead><tr>
+          <th onclick="sortFinTable('fin-high','name',0)">종목</th>
+          <th onclick="sortFinTable('fin-high','price',1)">현재가</th>
+          <th onclick="sortFinTable('fin-high','change_pct',2)">등락률</th>
+          <th onclick="sortFinTable('fin-high','high_52w',3)">52주 신고가</th>
+          <th onclick="sortFinTable('fin-high','stability',4)">재무안정성</th>
+        </tr></thead>
+        <tbody id="body-fin-high"></tbody>
+      </table>
+    </div>
+
+  </div>
+
+  <!-- 탭: 버핏지수 -->
+  <div class="tab-panel" id="tab-buffett">
+    <div id="buffett-content">
+      <div class="empty">
+        <div class="empty-icon">📊</div>
+        <div class="empty-title">버핏지수 데이터 없음</div>
+        <div class="empty-desc">data/buffett_index.json 파일을 업로드해주세요</div>
+      </div>
     </div>
   </div>
 
 </div>
 
 <script>
-// ──────────────────────────────────────────
-// 전역 상태
-// ──────────────────────────────────────────
 let DATA = null;
+let FIN_DATA = null;
+let BUFFETT_DATA = null;
 let currentTab    = 'highs';
 let currentMarket = 'ALL';
-let sortState     = {};  // {tableId: {col, dir}}
+let sortState     = {};
+let finSortState  = {};
 
-// ──────────────────────────────────────────
-// 데이터 로드
-// ──────────────────────────────────────────
+// ── 데이터 로드 ──
 async function loadData() {
   try {
     const res = await fetch(`data/market_data.json?t=${Date.now()}`);
     DATA = await res.json();
-    document.getElementById('update-date').textContent =
-      formatDate(DATA.updated_at) + ' 기준';
+    el('update-date').textContent = formatDate(DATA.updated_at) + ' 기준';
     updateStats();
     renderTable();
-    document.getElementById('loading').style.display = 'none';
+
+    // 재무안정성 데이터 별도 로드
+    try {
+      const res2 = await fetch(`data/financial_stability.json?t=${Date.now()}`);
+      FIN_DATA = await res2.json();
+    } catch(e) { FIN_DATA = null; }
+
+    // 버핏지수 데이터 로드
+    try {
+      const res3 = await fetch(`data/buffett_index.json?t=${Date.now()}`);
+      BUFFETT_DATA = await res3.json();
+      if (BUFFETT_DATA) {
+        el('s-buffett').textContent = BUFFETT_DATA.today.buffett_index;
+      }
+    } catch(e) { BUFFETT_DATA = null; }
+
+    el('loading').style.display = 'none';
   } catch(e) {
-    document.getElementById('loading').innerHTML =
+    el('loading').innerHTML =
       `<div style="color:#ff4757;font-family:monospace">데이터 로드 실패<br>${e.message}</div>`;
   }
 }
 
-// ──────────────────────────────────────────
-// 통계 업데이트
-// ──────────────────────────────────────────
+// ── 통계 업데이트 ──
 function updateStats() {
   const s = DATA.stats;
   el('s-highs').textContent = s.highs_today.toLocaleString();
@@ -561,45 +571,46 @@ function updateStats() {
   el('s-both').textContent  = s.volume_and_high.toLocaleString();
 }
 
-// ──────────────────────────────────────────
-// 탭 전환
-// ──────────────────────────────────────────
+// ── 탭 전환 ──
 function switchTab(tab) {
   currentTab = tab;
   document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
   document.querySelectorAll('.stat-card').forEach(c => c.classList.remove('active'));
   el('tab-' + tab).classList.add('active');
   el('tab-btn-' + tab).classList.add('active');
-  renderTable();
+  if (tab === 'financial') {
+    renderFinancialTable();
+  } else if (tab === 'buffett') {
+    renderBuffettTable();
+  } else {
+    renderTable();
+  }
 }
 
-// ──────────────────────────────────────────
-// 마켓 필터
-// ──────────────────────────────────────────
+// ── 마켓 필터 ──
 function setMarket(market, btn) {
   currentMarket = market;
   document.querySelectorAll('#market-filters .btn').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
-  renderTable();
+  if (currentTab === 'financial') renderFinancialTable();
+  else renderTable();
 }
 
-// ──────────────────────────────────────────
-// 테이블 렌더링
-// ──────────────────────────────────────────
+// ── 일반 테이블 렌더링 ──
 function renderTable() {
   if (!DATA) return;
-
   const q = el('search-input').value.trim().toLowerCase();
   const r = DATA.results;
 
   const maps = {
-    highs:       { data: r.highs_today,      body: 'body-highs', render: renderHighRow },
-    consecutive2:{ data: r.consecutive_2plus, body: 'body-con2',  render: renderConsecRow },
-    consecutive3:{ data: r.consecutive_3plus, body: 'body-con3',  render: renderConsecRow },
-    volume:      { data: r.volume_spikes,     body: 'body-vol',   render: renderVolRow },
-    both:        { data: r.volume_and_high,   body: 'body-both',  render: renderBothRow },
+    highs:        { data: r.highs_today,      body: 'body-highs', render: renderHighRow },
+    consecutive2: { data: r.consecutive_2plus, body: 'body-con2',  render: renderConsecRow },
+    consecutive3: { data: r.consecutive_3plus, body: 'body-con3',  render: renderConsecRow },
+    volume:       { data: r.volume_spikes,     body: 'body-vol',   render: renderVolRow },
+    both:         { data: r.volume_and_high,   body: 'body-both',  render: renderBothRow },
   };
 
+  if (!maps[currentTab]) return;
   const { data, body, render } = maps[currentTab];
   const tbody = el(body);
 
@@ -609,7 +620,6 @@ function renderTable() {
     return true;
   });
 
-  // 정렬 적용
   const tblId = body.replace('body-', 'tbl-');
   if (sortState[tblId]) {
     const { col, dir } = sortState[tblId];
@@ -621,29 +631,153 @@ function renderTable() {
   }
 
   if (rows.length === 0) {
-    tbody.innerHTML = `<tr><td colspan="9">
-      <div class="empty">
-        <div class="empty-icon">📭</div>
-        <div class="empty-title">해당 조건의 종목 없음</div>
-        <div class="empty-desc">필터 조건을 변경해보세요</div>
-      </div></td></tr>`;
+    tbody.innerHTML = `<tr><td colspan="9"><div class="empty">
+      <div class="empty-icon">📭</div>
+      <div class="empty-title">해당 조건의 종목 없음</div>
+      <div class="empty-desc">필터 조건을 변경해보세요</div>
+    </div></td></tr>`;
     return;
   }
-
   tbody.innerHTML = rows.map(render).join('');
 }
 
-// ──────────────────────────────────────────
-// 행 렌더러
-// ──────────────────────────────────────────
+// ── 버핏지수 렌더링 ──
+function renderBuffettTable() {
+  const wrap = el('buffett-content');
+  if (!BUFFETT_DATA) {
+    wrap.innerHTML = `<div class="empty">
+      <div class="empty-icon">📊</div>
+      <div class="empty-title">버핏지수 데이터 없음</div>
+      <div class="empty-desc">data/buffett_index.json 파일을 업로드해주세요</div>
+    </div>`;
+    return;
+  }
+  const d = BUFFETT_DATA;
+  const t = d.today;
+  const s = d.stats_3y;
+  const bi = t.buffett_index;
+  let level = '', levelColor = '';
+  if      (bi >= 120) { level = '과대평가'; levelColor = '#ff4757'; }
+  else if (bi >= 100) { level = '고평가';   levelColor = '#ff9f43'; }
+  else if (bi >= 80)  { level = '적정';     levelColor = '#f5c842'; }
+  else if (bi >= 60)  { level = '저평가';   levelColor = '#00d4aa'; }
+  else                { level = '과소평가'; levelColor = '#5b9ef0'; }
+  const gaugeMin = 60, gaugeMax = 300;
+  const gaugePct = Math.min(Math.max((bi - gaugeMin) / (gaugeMax - gaugeMin) * 100, 0), 100);
+
+  wrap.innerHTML = `
+    <div style="font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--muted);margin-bottom:16px;">
+      📅 ${d.date} 기준 | 출처: ${d.source}
+    </div>
+    <div style="display:flex;gap:16px;flex-wrap:wrap;margin-bottom:24px;">
+      <div class="table-wrap" style="flex:1;min-width:200px;padding:20px 24px;">
+        <div style="font-size:11px;color:var(--muted);letter-spacing:1px;margin-bottom:8px;">버핏지수</div>
+        <div style="font-family:'JetBrains Mono',monospace;font-size:42px;font-weight:700;color:${levelColor};line-height:1;">${bi}</div>
+        <div style="margin-top:8px;">
+          <span style="font-family:'JetBrains Mono',monospace;font-size:13px;color:${t.change_pct>=0?'var(--green)':'var(--red)'}">
+            ${t.change_pct>=0?'▲':'▼'}${Math.abs(t.change_point)}p (${Math.abs(t.change_pct)}%)
+          </span>
+          <span style="font-size:12px;color:${levelColor};font-weight:700;margin-left:12px;
+            background:${levelColor}22;padding:2px 10px;border-radius:4px;border:1px solid ${levelColor}44;">
+            ${level}
+          </span>
+        </div>
+        <div style="margin-top:16px;">
+          <div style="display:flex;justify-content:space-between;font-size:10px;color:var(--muted);margin-bottom:4px;">
+            <span>과소(60)</span><span>저평가(80)</span><span>고평가(100)</span><span>과대(120+)</span>
+          </div>
+          <div style="height:8px;background:linear-gradient(to right,#5b9ef0,#00d4aa,#f5c842,#ff9f43,#ff4757);border-radius:4px;position:relative;">
+            <div style="position:absolute;top:-4px;left:${gaugePct}%;transform:translateX(-50%);
+              width:4px;height:16px;background:#fff;border-radius:2px;box-shadow:0 0 6px rgba(255,255,255,.8);"></div>
+          </div>
+        </div>
+      </div>
+      <div class="table-wrap" style="flex:1;min-width:200px;padding:20px 24px;">
+        <div style="font-size:11px;color:var(--muted);letter-spacing:1px;margin-bottom:12px;">시가총액 / GDP</div>
+        <table style="width:100%;font-size:13px;">
+          <tr><td style="color:var(--muted);padding:6px 0;">코스피 시총</td><td style="text-align:right;font-family:'JetBrains Mono',monospace;color:var(--kospi);">${t.kospi_market_cap.toLocaleString()}조</td></tr>
+          <tr><td style="color:var(--muted);padding:6px 0;">코스닥 시총</td><td style="text-align:right;font-family:'JetBrains Mono',monospace;color:var(--kosdaq);">${t.kosdaq_market_cap.toLocaleString()}조</td></tr>
+          <tr style="border-top:1px solid var(--border);"><td style="color:var(--muted);padding:6px 0;">합산 시총</td><td style="text-align:right;font-family:'JetBrains Mono',monospace;">${(t.kospi_market_cap+t.kosdaq_market_cap).toLocaleString()}조</td></tr>
+          <tr><td style="color:var(--muted);padding:6px 0;">GDP (연환산)</td><td style="text-align:right;font-family:'JetBrains Mono',monospace;color:var(--gold);">${t.gdp.toLocaleString()}조</td></tr>
+        </table>
+      </div>
+    </div>
+    <div style="display:flex;gap:16px;flex-wrap:wrap;">
+      <div class="table-wrap" style="flex:1;min-width:200px;">
+        <table>
+          <thead><tr><th colspan="2">3년 통계</th></tr></thead>
+          <tbody>
+            <tr><td style="color:var(--muted);">3년 최고</td><td style="font-family:'JetBrains Mono',monospace;color:var(--red);">${s.high}</td></tr>
+            <tr><td style="color:var(--muted);">3년 최저</td><td style="font-family:'JetBrains Mono',monospace;color:var(--blue);">${s.low}</td></tr>
+            <tr><td style="color:var(--muted);">3년 평균</td><td style="font-family:'JetBrains Mono',monospace;color:var(--muted);">${s.avg}</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="table-wrap" style="flex:2;min-width:300px;">
+        <table>
+          <thead><tr><th>평가 기준</th><th>버핏지수</th><th>코스피</th><th>코스닥</th></tr></thead>
+          <tbody>
+            ${d.evaluation.map((e,i) => {
+              const prev = d.evaluation[i-1];
+              const isNow = bi >= e.index && (!prev || bi < prev.index);
+              return `<tr style="${isNow?'background:rgba(255,255,255,.05)':''}">
+                <td style="font-weight:600;color:${e.index>=120?'#ff4757':e.index>=100?'#ff9f43':e.index>=80?'#f5c842':'#5b9ef0'}">
+                  ${e.label}${isNow?' ◀':''}</td>
+                <td style="font-family:'JetBrains Mono',monospace;">${e.index}</td>
+                <td style="font-family:'JetBrains Mono',monospace;color:var(--kospi);">${e.kospi.toLocaleString()}</td>
+                <td style="font-family:'JetBrains Mono',monospace;color:var(--kosdaq);">${e.kosdaq.toLocaleString()}</td>
+              </tr>`;
+            }).join('')}
+          </tbody>
+        </table>
+      </div>
+    </div>`;
+}
+
+// ── 재무안정성 테이블 렌더링 ──
+function renderFinancialTable() {
+  if (!FIN_DATA) {
+    el('body-fin-high').innerHTML = `<tr><td colspan="5"><div class="empty">
+      <div class="empty-icon">📭</div>
+      <div class="empty-title">재무안정성 데이터 없음</div>
+      <div class="empty-desc">data/financial_stability.json 파일을 업로드해주세요</div>
+    </div></td></tr>`;
+    el('body-fin-low').innerHTML = '';
+    return;
+  }
+
+  // 날짜 표시
+  el('fin-date-wrap').innerHTML =
+    `<div class="fin-date-badge">📅 ${FIN_DATA.date} 기준 | 출처: ${FIN_DATA.source}</div>`;
+
+  const q = el('search-input').value.trim().toLowerCase();
+
+  // 신고가
+  let highRows = [...FIN_DATA.high_52w].filter(item =>
+    !q || item.name.toLowerCase().includes(q)
+  );
+  if (finSortState['fin-high']) {
+    const { col, dir } = finSortState['fin-high'];
+    highRows.sort((a, b) => {
+      const av = a[col] ?? 0, bv = b[col] ?? 0;
+      if (typeof av === 'string') return dir * av.localeCompare(bv);
+      return dir * (av - bv);
+    });
+  } else {
+    highRows.sort((a, b) => b.stability - a.stability);
+  }
+  el('body-fin-high').innerHTML = highRows.map(item => renderFinHighRow(item)).join('');
+
+
+}
+
+// ── 행 렌더러 ──
 function renderHighRow(item) {
   return `<tr>
     <td>
       <div class="ticker-name">${item.name}</div>
-      <div>
-        <span class="ticker-code">${item.code}</span>
-        <span class="badge badge-${item.market.toLowerCase()}">${item.market}</span>
-      </div>
+      <div><span class="ticker-code">${item.code}</span>
+      <span class="badge badge-${item.market.toLowerCase()}">${item.market}</span></div>
     </td>
     <td><span class="num">${item.close.toLocaleString()}</span></td>
     <td><span class="num num-blue">${item.prev_52w_high.toLocaleString()}</span></td>
@@ -659,10 +793,8 @@ function renderConsecRow(item) {
   return `<tr>
     <td>
       <div class="ticker-name">${item.name}</div>
-      <div>
-        <span class="ticker-code">${item.code}</span>
-        <span class="badge badge-${item.market.toLowerCase()}">${item.market}</span>
-      </div>
+      <div><span class="ticker-code">${item.code}</span>
+      <span class="badge badge-${item.market.toLowerCase()}">${item.market}</span></div>
     </td>
     <td><span class="num">${item.close.toLocaleString()}</span></td>
     <td><span class="num num-green">+${item.breakout_pct}%</span></td>
@@ -678,18 +810,14 @@ function renderVolRow(item) {
   return `<tr class="${item.is_52w_high ? 'both-highlight' : ''}">
     <td>
       <div class="ticker-name">${item.name}</div>
-      <div>
-        <span class="ticker-code">${item.code}</span>
-        <span class="badge badge-${item.market.toLowerCase()}">${item.market}</span>
-        ${item.is_52w_high ? '<span class="badge" style="background:rgba(245,200,66,.15);color:var(--gold);border:1px solid rgba(245,200,66,.3)">신고가</span>' : ''}
-      </div>
+      <div><span class="ticker-code">${item.code}</span>
+      <span class="badge badge-${item.market.toLowerCase()}">${item.market}</span>
+      ${item.is_52w_high ? '<span class="badge" style="background:rgba(245,200,66,.15);color:var(--gold);border:1px solid rgba(245,200,66,.3)">신고가</span>' : ''}</div>
     </td>
     <td><span class="num">${item.close.toLocaleString()}</span></td>
     <td>
       <div class="vol-bar-wrap">
-        <div class="vol-bar-bg">
-          <div class="vol-bar-fill" style="width:${pct}%"></div>
-        </div>
+        <div class="vol-bar-bg"><div class="vol-bar-fill" style="width:${pct}%"></div></div>
         <span class="vol-ratio-text">${item.vol_ratio}x</span>
       </div>
     </td>
@@ -704,18 +832,14 @@ function renderBothRow(item) {
   return `<tr class="both-highlight">
     <td>
       <div class="ticker-name">${item.name}</div>
-      <div>
-        <span class="ticker-code">${item.code}</span>
-        <span class="badge badge-${item.market.toLowerCase()}">${item.market}</span>
-        <span class="badge" style="background:rgba(245,200,66,.15);color:var(--gold);border:1px solid rgba(245,200,66,.3)">신고가</span>
-      </div>
+      <div><span class="ticker-code">${item.code}</span>
+      <span class="badge badge-${item.market.toLowerCase()}">${item.market}</span>
+      <span class="badge" style="background:rgba(245,200,66,.15);color:var(--gold);border:1px solid rgba(245,200,66,.3)">신고가</span></div>
     </td>
     <td><span class="num">${item.close.toLocaleString()}</span></td>
     <td>
       <div class="vol-bar-wrap">
-        <div class="vol-bar-bg">
-          <div class="vol-bar-fill" style="width:${pct}%"></div>
-        </div>
+        <div class="vol-bar-bg"><div class="vol-bar-fill" style="width:${pct}%"></div></div>
         <span class="vol-ratio-text">${item.vol_ratio}x</span>
       </div>
     </td>
@@ -724,25 +848,46 @@ function renderBothRow(item) {
   </tr>`;
 }
 
-// ──────────────────────────────────────────
-// 정렬
-// ──────────────────────────────────────────
+function renderFinHighRow(item) {
+  const chg = item.change_pct >= 0
+    ? `<span class="num num-green">▲${item.change_pct}%</span>`
+    : `<span class="num num-red">▼${Math.abs(item.change_pct)}%</span>`;
+  return `<tr>
+    <td><div class="ticker-name">${item.name}</div></td>
+    <td><span class="num">${item.price.toLocaleString()}</span></td>
+    <td>${chg}</td>
+    <td><span class="num num-gold">${item.high_52w.toLocaleString()}</span></td>
+    <td>${starBadge(item.stability)}</td>
+  </tr>`;
+}
+
+
+
+// ── 정렬 ──
 function sortTable(tblId, col, colIdx) {
   const prev = sortState[tblId];
   const dir = (prev && prev.col === col) ? -prev.dir : -1;
   sortState[tblId] = { col, dir };
-
   document.querySelectorAll(`#${tblId} thead th`).forEach((th, i) => {
     th.classList.remove('sort-asc', 'sort-desc');
     if (i === colIdx) th.classList.add(dir === -1 ? 'sort-desc' : 'sort-asc');
   });
-
   renderTable();
 }
 
-// ──────────────────────────────────────────
-// 헬퍼
-// ──────────────────────────────────────────
+function sortFinTable(tblKey, col, colIdx) {
+  const prev = finSortState[tblKey];
+  const dir = (prev && prev.col === col) ? -prev.dir : -1;
+  finSortState[tblKey] = { col, dir };
+  const tblId = 'tbl-' + tblKey;
+  document.querySelectorAll(`#${tblId} thead th`).forEach((th, i) => {
+    th.classList.remove('sort-asc', 'sort-desc');
+    if (i === colIdx) th.classList.add(dir === -1 ? 'sort-desc' : 'sort-asc');
+  });
+  renderFinancialTable();
+}
+
+// ── 헬퍼 ──
 function el(id) { return document.getElementById(id); }
 
 function formatDate(s) {
@@ -753,14 +898,15 @@ function formatDate(s) {
 function streakBadge(n) {
   const fire = n >= 5 ? '🔥🔥' : n >= 3 ? '🔥' : n >= 2 ? '✦' : '';
   const color = n >= 5 ? 'var(--red)' : n >= 3 ? 'var(--gold)' : n >= 2 ? 'var(--accent2)' : 'var(--text)';
-  return `<span class="streak" style="color:${color}">
-    ${n}일 <span class="streak-fire">${fire}</span>
-  </span>`;
+  return `<span class="streak" style="color:${color}">${n}일 <span class="streak-fire">${fire}</span></span>`;
 }
 
-// ──────────────────────────────────────────
-// 초기화
-// ──────────────────────────────────────────
+function starBadge(n) {
+  if (n === 0) return `<span class="stars stars-0">☆</span>`;
+  const stars = '★'.repeat(n);
+  return `<span class="stars stars-${n}">${stars}</span>`;
+}
+
 loadData();
 </script>
 </body>
