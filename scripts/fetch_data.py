@@ -25,11 +25,12 @@ except ImportError:
 
 HISTORY_FILE = 'data/history.json'
 RESULT_FILE = 'data/market_data.json'
-LOOKBACK = 260              # 52주 + 여유분
+LOOKBACK = 260
 VOLUME_AVG_DAYS = 20
 VOLUME_SPIKE_RATIO = 2.0
-MAX_WORKERS = 8             # 동시 다운로드 스레드 (네이버 부하 고려)
-INITIAL_DAYS = 400          # 첫 수집 시 캘린더일 (≈260 거래일 확보)
+MAX_WORKERS = 8
+INITIAL_DAYS = 400
+TRADING_VALUE_TOP_N = 30  # 거래대금 상위 종목 수
 
 
 # ─────────────────────────────────────────────
@@ -54,7 +55,6 @@ def save_json(path, data, indent=None):
 # 2. 종목 목록
 # ─────────────────────────────────────────────
 def get_listings():
-    """KOSPI + KOSDAQ 전 종목: {code: {'name','market','m'}}"""
     listings = {}
     for market in ['KOSPI', 'KOSDAQ']:
         df = fdr.StockListing(market)
@@ -73,7 +73,6 @@ def get_listings():
 # 3. 종목별 OHLCV 다운로드
 # ─────────────────────────────────────────────
 def fetch_ticker(code, market_letter, start_date, end_date):
-    """단일 종목 OHLCV → {YYYYMMDD: {h,c,v,m}}.  실패 시 None."""
     try:
         df = fdr.DataReader(code, start_date, end_date)
     except Exception:
@@ -97,7 +96,7 @@ def fetch_ticker(code, market_letter, start_date, end_date):
 
 
 # ─────────────────────────────────────────────
-# 4. 거래일 목록 (전체 history에서 도출)
+# 4. 거래일 목록
 # ─────────────────────────────────────────────
 def derive_trading_dates(history, n=LOOKBACK):
     all_dates = set()
@@ -107,7 +106,7 @@ def derive_trading_dates(history, n=LOOKBACK):
 
 
 # ─────────────────────────────────────────────
-# 5. 연속 신고가 일수 계산 (원본 동일)
+# 5. 연속 신고가 일수 계산
 # ─────────────────────────────────────────────
 def count_consecutive(ticker, history, trading_dates):
     streak = 0
@@ -134,14 +133,16 @@ def count_consecutive(ticker, history, trading_dates):
 
 
 # ─────────────────────────────────────────────
-# 6. 분석 (원본 로직 동일, 종목명/시장은 listings에서 조회)
+# 6. 분석
 # ─────────────────────────────────────────────
 def analyze(history, trading_dates, listings):
     today = trading_dates[-1]
     prev_251 = set(trading_dates[-252:-1])
+    prev_day = trading_dates[-2] if len(trading_dates) >= 2 else None
 
     highs = []
     volume_spikes = []
+    trading_values = []  # 거래대금 계산용
 
     for ticker, dates_data in history.items():
         today_d = dates_data.get(today)
@@ -156,7 +157,7 @@ def analyze(history, trading_dates, listings):
         market = info.get('market') or ('KOSPI' if today_d.get('m') == 'K' else 'KOSDAQ')
         name = info.get('name', ticker)
 
-        # 52주 신고가
+        # ── 52주 신고가 ──
         prev_highs = [
             dates_data[d]['h']
             for d in prev_251
@@ -190,7 +191,7 @@ def analyze(history, trading_dates, listings):
                 'volume': today_v,
             })
 
-        # 거래량 급증 (오늘 제외 직전 20거래일 평균 대비)
+        # ── 거래량 급증 ──
         recent_dates = [d for d in trading_dates[-21:-1] if d in dates_data]
         recent_vols = [dates_data[d]['v'] for d in recent_dates if dates_data[d]['v'] > 0]
         if recent_vols and today_v > 0:
@@ -208,8 +209,39 @@ def analyze(history, trading_dates, listings):
                     'is_52w_high': is_52w_high,
                 })
 
+        # ── 거래대금 계산 ──
+        if today_v > 0:
+            value = today_c * today_v
+
+            prev_value = 0
+            if prev_day and prev_day in dates_data:
+                pd_data = dates_data[prev_day]
+                if pd_data['c'] > 0 and pd_data['v'] > 0:
+                    prev_value = pd_data['c'] * pd_data['v']
+
+            value_change_pct = round((value / prev_value - 1) * 100, 2) if prev_value > 0 else 0
+
+            trading_values.append({
+                'code': ticker,
+                'name': name,
+                'market': market,
+                'close': today_c,
+                'volume': today_v,
+                'trading_value': value,
+                'trading_value_bil': round(value / 100000000, 1),
+                'prev_value_bil': round(prev_value / 100000000, 1),
+                'value_change_pct': value_change_pct,
+                'is_52w_high': is_52w_high,
+            })
+
     highs.sort(key=lambda x: (-x['consecutive'], -x['breakout_pct']))
     volume_spikes.sort(key=lambda x: -x['vol_ratio'])
+
+    # 거래대금 상위 — 코스피/코스닥 각각 TOP N
+    trading_values.sort(key=lambda x: -x['trading_value'])
+    trading_value_top_kospi  = [x for x in trading_values if x['market'] == 'KOSPI'][:TRADING_VALUE_TOP_N]
+    trading_value_top_kosdaq = [x for x in trading_values if x['market'] == 'KOSDAQ'][:TRADING_VALUE_TOP_N]
+    trading_value_top = trading_value_top_kospi + trading_value_top_kosdaq
 
     return {
         'highs_today': highs,
@@ -217,6 +249,7 @@ def analyze(history, trading_dates, listings):
         'consecutive_3plus': [x for x in highs if x['consecutive'] >= 3],
         'volume_spikes': volume_spikes,
         'volume_and_high': [x for x in volume_spikes if x['is_52w_high']],
+        'trading_value_top': trading_value_top,
     }
 
 
@@ -228,12 +261,10 @@ def main():
     print(f"  KRX 신고가 스캐너 (FDR)  |  {datetime.now().strftime('%Y-%m-%d %H:%M')}")
     print(f"{'='*50}\n")
 
-    # 종목 목록
     print("종목 목록 조회 중...")
     listings = get_listings()
     print(f"  KOSPI+KOSDAQ {len(listings):,}종목\n")
 
-    # 히스토리 로드
     history = load_json(HISTORY_FILE, {})
     print(f"기존 히스토리: {len(history):,}종목")
 
@@ -276,7 +307,6 @@ def main():
                 print(f"  [{i:5d}/{total}] 성공 {success:5d} 실패 {fail:4d}  "
                       f"({elapsed:5.1f}s, {rate:.1f} req/s)")
 
-    # 거래일 목록
     trading_dates = derive_trading_dates(history, LOOKBACK)
     if not trading_dates:
         print("거래일이 없습니다. 종료.")
@@ -284,14 +314,12 @@ def main():
     today = trading_dates[-1]
     print(f"\n거래일: {len(trading_dates)}일  |  최신: {today}")
 
-    # 오래된 데이터 정리
     valid = set(trading_dates)
     for code in list(history.keys()):
         history[code] = {d: v for d, v in history[code].items() if d in valid}
         if not history[code]:
             del history[code]
 
-    # 분석
     print("\n분석 중...")
     results = analyze(history, trading_dates, listings)
 
@@ -302,6 +330,7 @@ def main():
         'consecutive_3plus': len(results['consecutive_3plus']),
         'volume_spikes': len(results['volume_spikes']),
         'volume_and_high': len(results['volume_and_high']),
+        'trading_value_top': len(results['trading_value_top']),
     }
 
     print("\n저장 중...")
@@ -320,6 +349,7 @@ def main():
     print(f"  연속 3회 이상  : {stats['consecutive_3plus']:,}종목")
     print(f"  거래량 급증    : {stats['volume_spikes']:,}종목")
     print(f"  신고가+거래량  : {stats['volume_and_high']:,}종목")
+    print(f"  거래대금 상위  : KOSPI+KOSDAQ 각 {TRADING_VALUE_TOP_N}종목")
     print(f"{'='*50}\n")
 
 
