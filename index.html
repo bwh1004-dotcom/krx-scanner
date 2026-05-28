@@ -378,6 +378,10 @@
     <div class="stat-num" style="color:#e056fd" id="s-buffett">—</div>
     <div class="stat-label">버핏지수</div>
   </div>
+  <div class="stat-card" onclick="switchTab('tradeval')" id="tab-btn-tradeval">
+    <div class="stat-num" style="color:#26de81" id="s-tradeval">TOP30</div>
+    <div class="stat-label">거래대금</div>
+  </div>
 </div>
 
 <!-- 필터 컨트롤 -->
@@ -519,6 +523,45 @@
     </div>
   </div>
 
+  <!-- 탭: 거래대금 상위 -->
+  <div class="tab-panel" id="tab-tradeval">
+    <div style="margin-bottom:8px;font-size:12px;color:#26de81;font-weight:600;letter-spacing:1px;">
+      🔵 KOSPI 거래대금 TOP30
+    </div>
+    <div class="table-wrap" style="margin-bottom:28px;">
+      <table id="tbl-tradeval-kospi">
+        <thead><tr>
+          <th onclick="sortTradeVal('kospi','name',0)">종목</th>
+          <th onclick="sortTradeVal('kospi','close',1)">현재가</th>
+          <th onclick="sortTradeVal('kospi','trading_value_bil',2)">거래대금(억)</th>
+          <th onclick="sortTradeVal('kospi','prev_value_bil',3)">전일(억)</th>
+          <th onclick="sortTradeVal('kospi','value_change_pct',4)">전일 대비</th>
+          <th onclick="sortTradeVal('kospi','volume',5)">거래량</th>
+          <th onclick="sortTradeVal('kospi','is_52w_high',6)">신고가</th>
+        </tr></thead>
+        <tbody id="body-tradeval-kospi"></tbody>
+      </table>
+    </div>
+
+    <div style="margin-bottom:8px;font-size:12px;color:#c678f0;font-weight:600;letter-spacing:1px;">
+      🟣 KOSDAQ 거래대금 TOP30
+    </div>
+    <div class="table-wrap">
+      <table id="tbl-tradeval-kosdaq">
+        <thead><tr>
+          <th onclick="sortTradeVal('kosdaq','name',0)">종목</th>
+          <th onclick="sortTradeVal('kosdaq','close',1)">현재가</th>
+          <th onclick="sortTradeVal('kosdaq','trading_value_bil',2)">거래대금(억)</th>
+          <th onclick="sortTradeVal('kosdaq','prev_value_bil',3)">전일(억)</th>
+          <th onclick="sortTradeVal('kosdaq','value_change_pct',4)">전일 대비</th>
+          <th onclick="sortTradeVal('kosdaq','volume',5)">거래량</th>
+          <th onclick="sortTradeVal('kosdaq','is_52w_high',6)">신고가</th>
+        </tr></thead>
+        <tbody id="body-tradeval-kosdaq"></tbody>
+      </table>
+    </div>
+  </div>
+
 </div>
 
 <script>
@@ -582,6 +625,8 @@ function switchTab(tab) {
     renderFinancialTable();
   } else if (tab === 'buffett') {
     renderBuffettTable();
+  } else if (tab === 'tradeval') {
+    renderTradeValTable();
   } else {
     renderTable();
   }
@@ -593,6 +638,7 @@ function setMarket(market, btn) {
   document.querySelectorAll('#market-filters .btn').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
   if (currentTab === 'financial') renderFinancialTable();
+  else if (currentTab === 'tradeval') renderTradeValTable();
   else renderTable();
 }
 
@@ -639,6 +685,85 @@ function renderTable() {
     return;
   }
   tbody.innerHTML = rows.map(render).join('');
+}
+
+// ── 거래대금 상위 렌더링 ──
+let tradeValSortState = { kospi: null, kosdaq: null };
+
+function renderTradeValTable() {
+  if (!DATA) return;
+  const r = DATA.results;
+  const tvData = r.trading_value_top;
+
+  const emptyHtml = `<tr><td colspan="7"><div class="empty">
+    <div class="empty-icon">📭</div>
+    <div class="empty-title">거래대금 데이터 없음</div>
+    <div class="empty-desc">fetch_data.py 업데이트 후 Actions 재실행 필요</div>
+  </div></td></tr>`;
+
+  if (!tvData || tvData.length === 0) {
+    el('body-tradeval-kospi').innerHTML = emptyHtml;
+    el('body-tradeval-kosdaq').innerHTML = emptyHtml;
+    return;
+  }
+
+  const q = el('search-input').value.trim().toLowerCase();
+
+  ['KOSPI', 'KOSDAQ'].forEach(market => {
+    const key = market.toLowerCase();
+    let rows = tvData.filter(item =>
+      item.market === market &&
+      (!q || item.name.toLowerCase().includes(q) || item.code.includes(q))
+    );
+
+    if (tradeValSortState[key]) {
+      const { col, dir } = tradeValSortState[key];
+      rows = [...rows].sort((a, b) => {
+        const av = a[col] ?? 0, bv = b[col] ?? 0;
+        if (typeof av === 'string') return dir * av.localeCompare(bv);
+        return dir * (av - bv);
+      });
+    }
+
+    rows = rows.slice(0, 30);
+    const color = market === 'KOSPI' ? '#26de81' : '#c678f0';
+
+    el(`body-tradeval-${key}`).innerHTML = rows.map((item, idx) => {
+      const chg = item.value_change_pct >= 0
+        ? `<span class="num num-green">▲${item.value_change_pct}%</span>`
+        : `<span class="num num-red">▼${Math.abs(item.value_change_pct)}%</span>`;
+      const rankColor = idx === 0 ? 'var(--gold)' : idx < 3 ? 'var(--accent2)' : 'var(--muted)';
+      return `<tr class="${item.is_52w_high ? 'both-highlight' : ''}">
+        <td>
+          <span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:${rankColor};margin-right:8px;">#${idx+1}</span>
+          <span class="ticker-name">${item.name}</span>
+          <div>
+            <span class="ticker-code">${item.code}</span>
+            <span class="badge badge-${key}">${market}</span>
+            ${item.is_52w_high ? '<span class="badge" style="background:rgba(245,200,66,.15);color:var(--gold);border:1px solid rgba(245,200,66,.3)">신고가</span>' : ''}
+          </div>
+        </td>
+        <td><span class="num">${item.close.toLocaleString()}</span></td>
+        <td><span class="num" style="color:${color};font-weight:700;">${item.trading_value_bil.toLocaleString()}억</span></td>
+        <td><span class="num" style="color:var(--muted);">${item.prev_value_bil.toLocaleString()}억</span></td>
+        <td>${chg}</td>
+        <td><span class="num" style="color:var(--muted);">${item.volume.toLocaleString()}</span></td>
+        <td>${item.is_52w_high ? '<span style="color:var(--gold)">✓</span>' : '<span style="color:var(--muted)">—</span>'}</td>
+      </tr>`;
+    }).join('') || emptyHtml;
+  });
+}
+
+function sortTradeVal(market, col, colIdx) {
+  const key = market.toLowerCase();
+  const prev = tradeValSortState[key];
+  const dir = (prev && prev.col === col) ? -prev.dir : -1;
+  tradeValSortState[key] = { col, dir };
+  document.querySelectorAll(`#tbl-tradeval-${key} thead th`).forEach((th, i) => {
+    th.classList.remove('sort-asc', 'sort-desc');
+    if (i === colIdx) th.classList.add(dir === -1 ? 'sort-desc' : 'sort-asc');
+  });
+  renderTradeValTable();
 }
 
 // ── 버핏지수 렌더링 ──
