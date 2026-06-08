@@ -52,20 +52,68 @@ def save_json(path, data, indent=None):
 
 
 # ─────────────────────────────────────────────
-# 2. 종목 목록
+# 2. 종목 목록 (history 기반 자동 복원)
 # ─────────────────────────────────────────────
-def get_listings():
-    listings = {}
-    for market in ['KOSPI', 'KOSDAQ']:
-        df = fdr.StockListing(market)
-        m = 'K' if market == 'KOSPI' else 'Q'
-        for _, row in df.iterrows():
-            code = str(row['Code']).zfill(6)
+LISTINGS_FILE = 'data/listings.json'
+
+def get_listings(history=None):
+    """
+    1순위: listings.json 캐시
+    2순위: history.json에서 종목코드+시장 복원 (종목명은 코드로 대체)
+    3순위: fdr.StockListing() 직접 수집
+    """
+    # 1순위: 캐시 파일
+    if os.path.exists(LISTINGS_FILE):
+        listings = load_json(LISTINGS_FILE, {})
+        if listings:
+            print(f"  종목 목록 캐시 로드: {len(listings):,}종목")
+            return listings
+
+    # 2순위: history.json에서 복원
+    if history:
+        print("  listings.json 없음 → history.json에서 종목 복원...")
+        listings = {}
+        for code, dates_data in history.items():
+            if not dates_data:
+                continue
+            # 가장 최근 날짜 데이터에서 시장 정보 추출
+            latest = max(dates_data.keys())
+            d = dates_data[latest]
+            m = d.get('m', 'K')
+            market = 'KOSPI' if m == 'K' else 'KOSDAQ'
             listings[code] = {
-                'name': str(row['Name']),
+                'name': code,  # 종목명 없으면 코드로 대체
                 'market': market,
                 'm': m,
             }
+        print(f"  history 기반 복원: {len(listings):,}종목")
+
+        # 복원된 목록을 캐시로 저장
+        if listings:
+            save_json(LISTINGS_FILE, listings, indent=2)
+            print(f"  listings.json 자동 생성 완료")
+        return listings
+
+    # 3순위: 직접 수집 시도
+    print("  fdr.StockListing() 시도...")
+    listings = {}
+    try:
+        for market in ['KOSPI', 'KOSDAQ']:
+            df = fdr.StockListing(market)
+            m = 'K' if market == 'KOSPI' else 'Q'
+            for _, row in df.iterrows():
+                code = str(row['Code']).zfill(6)
+                listings[code] = {
+                    'name': str(row['Name']),
+                    'market': market,
+                    'm': m,
+                }
+        if listings:
+            save_json(LISTINGS_FILE, listings, indent=2)
+            print(f"  수집 완료: {len(listings):,}종목")
+    except Exception as e:
+        print(f"  fdr.StockListing() 실패: {e}")
+
     return listings
 
 
@@ -261,12 +309,13 @@ def main():
     print(f"  KRX 신고가 스캐너 (FDR)  |  {datetime.now().strftime('%Y-%m-%d %H:%M')}")
     print(f"{'='*50}\n")
 
-    print("종목 목록 조회 중...")
-    listings = get_listings()
-    print(f"  KOSPI+KOSDAQ {len(listings):,}종목\n")
-
+    print("히스토리 로드 중...")
     history = load_json(HISTORY_FILE, {})
     print(f"기존 히스토리: {len(history):,}종목")
+
+    print("\n종목 목록 조회 중...")
+    listings = get_listings(history)
+    print(f"  KOSPI+KOSDAQ {len(listings):,}종목\n")
 
     end_date = datetime.today()
     end_str = end_date.strftime('%Y-%m-%d')
