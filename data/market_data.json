@@ -13,7 +13,7 @@
     "highs_today": [
       {
         "code": "040350",
-        "name": "040350",
+        "name": "CreoSG Co.,Ltd.",
         "market": "KOSDAQ",
         "close": 9890,
         "high": 10160,
@@ -26,7 +26,7 @@
       },
       {
         "code": "457370",
-        "name": "457370",
+        "name": "Hanchem Co,. Ltd.",
         "market": "KOSDAQ",
         "close": 13050,
         "high": 17040,
@@ -39,7 +39,7 @@
       },
       {
         "code": "319660",
-        "name": "319660",
+        "name": "PSK Inc.",
         "market": "KOSDAQ",
         "close": 111200,
         "high": 132700,
@@ -52,7 +52,7 @@
       },
       {
         "code": "126640",
-        "name": "126640",
+        "name": "Hwashin Precision Engineering Co., Ltd.",
         "market": "KOSDAQ",
         "close": 2625,
         "high": 2625,
@@ -65,7 +65,7 @@
       },
       {
         "code": "047080",
-        "name": "047080",
+        "name": "HANBIT SOFT Inc.",
         "market": "KOSDAQ",
         "close": 1580,
         "high": 1800,
@@ -78,7 +78,7 @@
       },
       {
         "code": "001740",
-        "name": "001740",
+        "name": "SK Networks Company Limited",
         "market": "KOSPI",
         "close": 14170,
         "high": 14170,
@@ -93,7 +93,7 @@
     "consecutive_2plus": [
       {
         "code": "040350",
-        "name": "040350",
+        "name": "CreoSG Co.,Ltd.",
         "market": "KOSDAQ",
         "close": 9890,
         "high": 10160,
@@ -106,7 +106,7 @@
       },
       {
         "code": "457370",
-        "name": "457370",
+        "name": "Hanchem Co,. Ltd.",
         "market": "KOSDAQ",
         "close": 13050,
         "high": 17040,
@@ -119,7 +119,7 @@
       },
       {
         "code": "319660",
-        "name": "319660",
+        "name": "PSK Inc.",
         "market": "KOSDAQ",
         "close": 111200,
         "high": 132700,
@@ -135,7 +135,7 @@
     "volume_spikes": [
       {
         "code": "003220",
-        "name": "003220",
+        "name": "Daewon Pharmaceutical Co., Ltd.",
         "market": "KOSPI",
         "close": 12400,
         "volume": 3573508,
@@ -145,7 +145,7 @@
       },
       {
         "code": "003465",
-        "name": "003465",
+        "name": "Yuhwa Securities co.,ltd.",
         "market": "KOSPI",
         "close": 2800,
         "volume": 333776,
@@ -155,7 +155,7 @@
       },
       {
         "code": "001000",
-        "name": "001000",
+        "name": "Silla Textile Co.,Ltd",
         "market": "KOSDAQ",
         "close": 1622,
         "volume": 3001994,
@@ -165,7 +165,7 @@
       },
       {
         "code": "030960",
-        "name": "030960",
+        "name": "Yangjisa Co., Ltd.",
         "market": "KOSDAQ",
         "close": 5670,
         "volume": 1830305,
@@ -175,7 +175,7 @@
       },
       {
         "code": "459550",
-        "name": "459550",
+        "name": "ALT Co., Ltd.",
         "market": "KOSDAQ",
         "close": 2020,
         "volume": 26254958,
@@ -185,7 +185,7 @@
       },
       {
         "code": "299900",
-        "name": "299900",
+        "name": "Wysiwyg Studios Co., Ltd.",
         "market": "KOSDAQ",
         "close": 297,
         "volume": 7187268,
@@ -195,7 +195,7 @@
       },
       {
         "code": "006220",
-        "name": "006220",
+        "name": "Jeju Bank",
         "market": "KOSPI",
         "close": 10350,
         "volume": 5693219,
@@ -205,7 +205,7 @@
       },
       {
         "code": "291810",
-        "name": "291810",
+        "name": "Pintel Co., Ltd.",
         "market": "KOSDAQ",
         "close": 1827,
         "volume": 3044852,
@@ -215,7 +215,7 @@
       },
       {
         "code": "049120",
-        "name": "049120",
+        "name": "Fine DNC Co., Ltd.",
         "market": "KOSDAQ",
         "close": 2110,
         "volume": 1138441,
@@ -225,7 +225,7 @@
       },
       {
         "code": "478110",
-        "name": "478110",
+        "name": "Ebest No 6 SPAC",
         "market": "KOSDAQ",
         "close": 2030,
         "volume": 52846,
@@ -235,7 +235,7 @@
       },
       {
         "code": "482520",
-        "name": "482520",
+        "name": "Kyobo 16 SPAC",
         "market": "KOSDAQ",
         "close": 2030,
         "volume": 137244,
@@ -245,7 +245,7 @@
       },
       {
         "code": "004105",
-        "name": "004105",
+        "name": "Taeyang Metal Industrial Co., Ltd.",
         "market": "KOSPI",
         "close": 3540,
         "volume": 733607,
@@ -255,7 +255,7 @@
       },
       {
         "code": "203400",
-        "name": "203400",
+        "name": "ABION Inc.",
         "market": "KOSDAQ",
         "close": 1235,
         "volume": 7856482,
@@ -265,7 +265,7 @@
       },
       {
         "code": "457370",
-        "name": "457370",
+        "name": "Hanchem Co,. Ltd.",
         "market": "KOSDAQ",
         "close": 13050,
         "volume": 14459952,
@@ -275,7 +275,7 @@
       },
       {
         "code": "085620",
-        "name": "085620",
+        "name": "MIRAE ASSET Life Insurance Co., Ltd.",
         "market": "KOSPI",
         "close": 21000,
         "volume": 4839465,
@@ -285,7 +285,7 @@
       },
       {
         "code": "388790",
-        "name": "388790",
+        "name": "IBKS No.16 Special Purpose Acquisition Company",
         "market": "KOSDAQ",
         "close": 6750,
         "volume": 14963135,
@@ -295,7 +295,7 @@
       },
       {
         "code": "476080",
-        "name": "476080",
+        "name": "M83",
         "market": "KOSDAQ",
         "close": 5660,
         "volume": 3009809,
@@ -305,7 +305,7 @@
       },
       {
         "code": "010690",
-        "name": "010690",
+        "name": "HWASHIN CO.,Ltd",
         "market": "KOSPI",
         "close": 11490,
         "volume": 4955132,
@@ -315,7 +315,7 @@
       },
       {
         "code": "039860",
-        "name": "039860",
+        "name": "NanoEntek, Inc.",
         "market": "KOSDAQ",
         "close": 4090,
         "volume": 2852129,
@@ -325,7 +325,7 @@
       },
       {
         "code": "013720",
-        "name": "013720",
+        "name": "The Cube & Inc.",
         "market": "KOSDAQ",
         "close": 480,
         "volume": 3014573,
@@ -335,7 +335,7 @@
       },
       {
         "code": "493790",
-        "name": "493790",
+        "name": "Yuanta SPAC 17",
         "market": "KOSDAQ",
         "close": 2020,
         "volume": 38581,
@@ -345,7 +345,7 @@
       },
       {
         "code": "009460",
-        "name": "009460",
+        "name": "Hanchangpaper co., Ltd",
         "market": "KOSPI",
         "close": 2070,
         "volume": 277300,
@@ -355,7 +355,7 @@
       },
       {
         "code": "291230",
-        "name": "291230",
+        "name": "NP Inc.",
         "market": "KOSDAQ",
         "close": 647,
         "volume": 686637,
@@ -365,7 +365,7 @@
       },
       {
         "code": "004100",
-        "name": "004100",
+        "name": "Taeyang Metal Industrial Co., Ltd.",
         "market": "KOSPI",
         "close": 2835,
         "volume": 5038160,
@@ -375,7 +375,7 @@
       },
       {
         "code": "348030",
-        "name": "348030",
+        "name": "MOBIRIX Corporation",
         "market": "KOSDAQ",
         "close": 2680,
         "volume": 421656,
@@ -385,7 +385,7 @@
       },
       {
         "code": "210120",
-        "name": "210120",
+        "name": "CANVAS N Co.,Ltd.",
         "market": "KOSDAQ",
         "close": 1311,
         "volume": 2007532,
@@ -395,7 +395,7 @@
       },
       {
         "code": "006090",
-        "name": "006090",
+        "name": "Oyang Corporation",
         "market": "KOSPI",
         "close": 7950,
         "volume": 38608,
@@ -405,7 +405,7 @@
       },
       {
         "code": "468760",
-        "name": "468760",
+        "name": "Eugene Special Purpose Acquisition 10 Company",
         "market": "KOSDAQ",
         "close": 2075,
         "volume": 61064,
@@ -415,7 +415,7 @@
       },
       {
         "code": "473050",
-        "name": "473050",
+        "name": "Yuanta SPAC 15",
         "market": "KOSDAQ",
         "close": 2070,
         "volume": 66569,
@@ -425,7 +425,7 @@
       },
       {
         "code": "0037T0",
-        "name": "0037T0",
+        "name": "KB No. 32 Special Purpose Acquisition Company",
         "market": "KOSDAQ",
         "close": 1999,
         "volume": 41982,
@@ -435,7 +435,7 @@
       },
       {
         "code": "006920",
-        "name": "006920",
+        "name": "Mohenz.Co.,Ltd.",
         "market": "KOSDAQ",
         "close": 3750,
         "volume": 2269157,
@@ -445,7 +445,7 @@
       },
       {
         "code": "388870",
-        "name": "388870",
+        "name": "Pharos iBio Co., Ltd.",
         "market": "KOSDAQ",
         "close": 6380,
         "volume": 570415,
@@ -455,7 +455,7 @@
       },
       {
         "code": "271830",
-        "name": "271830",
+        "name": "Pamtek Co., Ltd.",
         "market": "KOSDAQ",
         "close": 2710,
         "volume": 11192133,
@@ -465,7 +465,7 @@
       },
       {
         "code": "145995",
-        "name": "145995",
+        "name": "Samyang Corporation",
         "market": "KOSPI",
         "close": 30500,
         "volume": 4177,
@@ -475,7 +475,7 @@
       },
       {
         "code": "481890",
-        "name": "481890",
+        "name": "Nh Special Purpose Acquisition 31 Company",
         "market": "KOSDAQ",
         "close": 2090,
         "volume": 46442,
@@ -485,7 +485,7 @@
       },
       {
         "code": "432430",
-        "name": "432430",
+        "name": "YLAB Corporation",
         "market": "KOSDAQ",
         "close": 2675,
         "volume": 318762,
@@ -495,7 +495,7 @@
       },
       {
         "code": "036630",
-        "name": "036630",
+        "name": "Sejong Telecom, Inc.",
         "market": "KOSDAQ",
         "close": 12560,
         "volume": 125706,
@@ -505,7 +505,7 @@
       },
       {
         "code": "498390",
-        "name": "498390",
+        "name": "HANWHA PLUS NO 5 SPAC",
         "market": "KOSDAQ",
         "close": 2035,
         "volume": 62537,
@@ -515,7 +515,7 @@
       },
       {
         "code": "173130",
-        "name": "173130",
+        "name": "OPASNET co., Ltd.",
         "market": "KOSDAQ",
         "close": 7110,
         "volume": 1097271,
@@ -525,7 +525,7 @@
       },
       {
         "code": "478440",
-        "name": "478440",
+        "name": "Mirae Asset Vision SPAC 6",
         "market": "KOSDAQ",
         "close": 2045,
         "volume": 43786,
@@ -535,7 +535,7 @@
       },
       {
         "code": "035420",
-        "name": "035420",
+        "name": "NAVER Corporation",
         "market": "KOSPI",
         "close": 279000,
         "volume": 10148390,
@@ -545,7 +545,7 @@
       },
       {
         "code": "025870",
-        "name": "025870",
+        "name": "Silla Sg Co., Ltd.",
         "market": "KOSDAQ",
         "close": 2755,
         "volume": 43580,
@@ -555,7 +555,7 @@
       },
       {
         "code": "0004Y0",
-        "name": "0004Y0",
+        "name": "DB Finance No.14 SPAC",
         "market": "KOSDAQ",
         "close": 1996,
         "volume": 31331,
@@ -565,7 +565,7 @@
       },
       {
         "code": "002220",
-        "name": "002220",
+        "name": "Hanil Iron & Steel Co., Ltd",
         "market": "KOSPI",
         "close": 5270,
         "volume": 1100672,
@@ -575,7 +575,7 @@
       },
       {
         "code": "477340",
-        "name": "477340",
+        "name": "HMCIB No.7 SPECIAL PURPOSE ACQUISITION COMPANY",
         "market": "KOSDAQ",
         "close": 2032,
         "volume": 31371,
@@ -585,7 +585,7 @@
       },
       {
         "code": "0091W0",
-        "name": "0091W0",
+        "name": "SHT-11 SPAC",
         "market": "KOSDAQ",
         "close": 2025,
         "volume": 35277,
@@ -595,7 +595,7 @@
       },
       {
         "code": "032540",
-        "name": "032540",
+        "name": "TJ media Co., Ltd.",
         "market": "KOSDAQ",
         "close": 3350,
         "volume": 59431,
@@ -605,7 +605,7 @@
       },
       {
         "code": "328130",
-        "name": "328130",
+        "name": "Lunit Inc.",
         "market": "KOSDAQ",
         "close": 14470,
         "volume": 1641726,
@@ -615,7 +615,7 @@
       },
       {
         "code": "472230",
-        "name": "472230",
+        "name": "SK Securities No.11 SPAC",
         "market": "KOSDAQ",
         "close": 2070,
         "volume": 38093,
@@ -625,7 +625,7 @@
       },
       {
         "code": "082800",
-        "name": "082800",
+        "name": "Vivozon Pharmaceutical Co., Ltd.",
         "market": "KOSDAQ",
         "close": 3185,
         "volume": 4505391,
@@ -635,7 +635,7 @@
       },
       {
         "code": "332370",
-        "name": "332370",
+        "name": "IDP Corp.,Ltd",
         "market": "KOSDAQ",
         "close": 4990,
         "volume": 66072,
@@ -645,7 +645,7 @@
       },
       {
         "code": "486630",
-        "name": "486630",
+        "name": "KB No.30 SPAC",
         "market": "KOSDAQ",
         "close": 2045,
         "volume": 30777,
@@ -655,7 +655,7 @@
       },
       {
         "code": "040350",
-        "name": "040350",
+        "name": "CreoSG Co.,Ltd.",
         "market": "KOSDAQ",
         "close": 9890,
         "volume": 1152687,
@@ -665,7 +665,7 @@
       },
       {
         "code": "458350",
-        "name": "458350",
+        "name": "ESteem",
         "market": "KOSDAQ",
         "close": 4600,
         "volume": 196652,
@@ -675,7 +675,7 @@
       },
       {
         "code": "263700",
-        "name": "263700",
+        "name": "Carelabs Co.,Ltd",
         "market": "KOSDAQ",
         "close": 1795,
         "volume": 144394,
@@ -685,7 +685,7 @@
       },
       {
         "code": "080420",
-        "name": "080420",
+        "name": "Moda-InnoChips Co., Ltd.",
         "market": "KOSDAQ",
         "close": 1441,
         "volume": 42844,
@@ -695,7 +695,7 @@
       },
       {
         "code": "047080",
-        "name": "047080",
+        "name": "HANBIT SOFT Inc.",
         "market": "KOSDAQ",
         "close": 1580,
         "volume": 3142899,
@@ -705,7 +705,7 @@
       },
       {
         "code": "143160",
-        "name": "143160",
+        "name": "Intelligent Digital Integrated Security Co., Ltd.",
         "market": "KOSDAQ",
         "close": 15750,
         "volume": 48004,
@@ -715,7 +715,7 @@
       },
       {
         "code": "002030",
-        "name": "002030",
+        "name": "ASIA Holdings CO., Ltd.",
         "market": "KOSPI",
         "close": 173800,
         "volume": 8410,
@@ -725,7 +725,7 @@
       },
       {
         "code": "367000",
-        "name": "367000",
+        "name": "Plateer Co., Ltd.",
         "market": "KOSDAQ",
         "close": 2850,
         "volume": 31039,
@@ -735,7 +735,7 @@
       },
       {
         "code": "424870",
-        "name": "424870",
+        "name": "ImmuneOncia",
         "market": "KOSDAQ",
         "close": 3950,
         "volume": 1500762,
@@ -745,7 +745,7 @@
       },
       {
         "code": "314930",
-        "name": "314930",
+        "name": "Biodyne Co., Ltd.",
         "market": "KOSDAQ",
         "close": 9700,
         "volume": 172578,
@@ -755,7 +755,7 @@
       },
       {
         "code": "0098T0",
-        "name": "0098T0",
+        "name": "Kyobo 19 SPAC",
         "market": "KOSDAQ",
         "close": 2015,
         "volume": 23650,
@@ -765,7 +765,7 @@
       },
       {
         "code": "462870",
-        "name": "462870",
+        "name": "SHIFT UP",
         "market": "KOSPI",
         "close": 30200,
         "volume": 239453,
@@ -775,7 +775,7 @@
       },
       {
         "code": "095660",
-        "name": "095660",
+        "name": "NEOWIZ",
         "market": "KOSDAQ",
         "close": 18750,
         "volume": 181095,
@@ -785,7 +785,7 @@
       },
       {
         "code": "175140",
-        "name": "175140",
+        "name": "HUMAN TECHNOLOGY Co., Ltd",
         "market": "KOSDAQ",
         "close": 2385,
         "volume": 272627,
@@ -795,7 +795,7 @@
       },
       {
         "code": "067830",
-        "name": "067830",
+        "name": "Savezone I&C Corporation",
         "market": "KOSPI",
         "close": 2275,
         "volume": 291681,
@@ -805,7 +805,7 @@
       },
       {
         "code": "005305",
-        "name": "005305",
+        "name": "Lotte Chilsung Beverage Co., Ltd.",
         "market": "KOSPI",
         "close": 66500,
         "volume": 4537,
@@ -815,7 +815,7 @@
       },
       {
         "code": "017180",
-        "name": "017180",
+        "name": "MYUNGMOON Pharm co.,Ltd",
         "market": "KOSPI",
         "close": 1315,
         "volume": 255051,
@@ -825,7 +825,7 @@
       },
       {
         "code": "005090",
-        "name": "005090",
+        "name": "SGC Energy Co.,Ltd.",
         "market": "KOSPI",
         "close": 46700,
         "volume": 294864,
@@ -835,7 +835,7 @@
       },
       {
         "code": "224110",
-        "name": "224110",
+        "name": "ATEC MOBILITY Co., Ltd",
         "market": "KOSDAQ",
         "close": 7840,
         "volume": 71768,
@@ -845,7 +845,7 @@
       },
       {
         "code": "001740",
-        "name": "001740",
+        "name": "SK Networks Company Limited",
         "market": "KOSPI",
         "close": 14170,
         "volume": 56474937,
@@ -855,7 +855,7 @@
       },
       {
         "code": "487830",
-        "name": "487830",
+        "name": "Shinhan 15th Special Purpose Acquisition Company Co Ltd",
         "market": "KOSDAQ",
         "close": 2020,
         "volume": 18910,
@@ -865,7 +865,7 @@
       },
       {
         "code": "467930",
-        "name": "467930",
+        "name": "IBKS No.23 SPAC",
         "market": "KOSDAQ",
         "close": 2100,
         "volume": 69680,
@@ -875,7 +875,7 @@
       },
       {
         "code": "110790",
-        "name": "110790",
+        "name": "Creas F&C Co.,Ltd",
         "market": "KOSDAQ",
         "close": 3205,
         "volume": 46652,
@@ -885,7 +885,7 @@
       },
       {
         "code": "004890",
-        "name": "004890",
+        "name": "Dongil Industries Co.,Ltd.",
         "market": "KOSPI",
         "close": 36000,
         "volume": 4391,
@@ -895,7 +895,7 @@
       },
       {
         "code": "417860",
-        "name": "417860",
+        "name": "Obzen Inc.",
         "market": "KOSDAQ",
         "close": 13650,
         "volume": 758294,
@@ -905,7 +905,7 @@
       },
       {
         "code": "075180",
-        "name": "075180",
+        "name": "Saeron Automotive Corporation",
         "market": "KOSPI",
         "close": 2730,
         "volume": 23755,
@@ -915,7 +915,7 @@
       },
       {
         "code": "053160",
-        "name": "053160",
+        "name": "FreeMs Corporation",
         "market": "KOSDAQ",
         "close": 7790,
         "volume": 70767,
@@ -925,7 +925,7 @@
       },
       {
         "code": "002020",
-        "name": "002020",
+        "name": "Kolon Corporation",
         "market": "KOSPI",
         "close": 44150,
         "volume": 283023,
@@ -935,7 +935,7 @@
       },
       {
         "code": "051780",
-        "name": "051780",
+        "name": "CUROHOLDINGS Co., Ltd.",
         "market": "KOSDAQ",
         "close": 3590,
         "volume": 668257,
@@ -945,7 +945,7 @@
       },
       {
         "code": "017670",
-        "name": "017670",
+        "name": "SK Telecom Co., Ltd.",
         "market": "KOSPI",
         "close": 106700,
         "volume": 4492964,
@@ -955,7 +955,7 @@
       },
       {
         "code": "090360",
-        "name": "090360",
+        "name": "Robostar Co., Ltd.",
         "market": "KOSDAQ",
         "close": 139000,
         "volume": 1997772,
@@ -965,7 +965,7 @@
       },
       {
         "code": "002800",
-        "name": "002800",
+        "name": "Sinsin Pharmaceutical Co., Ltd",
         "market": "KOSDAQ",
         "close": 4350,
         "volume": 160971,
@@ -975,7 +975,7 @@
       },
       {
         "code": "064520",
-        "name": "064520",
+        "name": "TechL Co., LTD.",
         "market": "KOSDAQ",
         "close": 1498,
         "volume": 90349,
@@ -985,7 +985,7 @@
       },
       {
         "code": "0072Z0",
-        "name": "0072Z0",
+        "name": "KB No.33 SPAC",
         "market": "KOSDAQ",
         "close": 1997,
         "volume": 48424,
@@ -995,7 +995,7 @@
       },
       {
         "code": "215200",
-        "name": "215200",
+        "name": "MegaStudyEdu Co. Ltd",
         "market": "KOSDAQ",
         "close": 36500,
         "volume": 94060,
@@ -1005,7 +1005,7 @@
       },
       {
         "code": "032750",
-        "name": "032750",
+        "name": "SAMJIN Co., Ltd.",
         "market": "KOSDAQ",
         "close": 2730,
         "volume": 83514,
@@ -1015,7 +1015,7 @@
       },
       {
         "code": "038950",
-        "name": "038950",
+        "name": "FINEDIGITAL Inc.",
         "market": "KOSDAQ",
         "close": 2890,
         "volume": 97303,
@@ -1025,7 +1025,7 @@
       },
       {
         "code": "099430",
-        "name": "099430",
+        "name": "Bio Plus Co., Ltd",
         "market": "KOSDAQ",
         "close": 4265,
         "volume": 1211203,
@@ -1035,7 +1035,7 @@
       },
       {
         "code": "159580",
-        "name": "159580",
+        "name": "Zero to Seven Inc.",
         "market": "KOSDAQ",
         "close": 2420,
         "volume": 121237,
@@ -1045,7 +1045,7 @@
       },
       {
         "code": "078935",
-        "name": "078935",
+        "name": "GS Holdings Corp.",
         "market": "KOSPI",
         "close": 50700,
         "volume": 21267,
@@ -1055,7 +1055,7 @@
       },
       {
         "code": "26490K",
-        "name": "26490K",
+        "name": "Crown Confectionery Co., Ltd.",
         "market": "KOSPI",
         "close": 7800,
         "volume": 4904,
@@ -1065,7 +1065,7 @@
       },
       {
         "code": "067000",
-        "name": "067000",
+        "name": "JOYCITY Corporation",
         "market": "KOSDAQ",
         "close": 1131,
         "volume": 1111639,
@@ -1075,7 +1075,7 @@
       },
       {
         "code": "189690",
-        "name": "189690",
+        "name": "FORCS Co.,Ltd.",
         "market": "KOSDAQ",
         "close": 1724,
         "volume": 132133,
@@ -1085,7 +1085,7 @@
       },
       {
         "code": "000250",
-        "name": "000250",
+        "name": "Sam Chun Dang Pharm. Co., Ltd",
         "market": "KOSDAQ",
         "close": 239000,
         "volume": 439281,
@@ -1095,7 +1095,7 @@
       },
       {
         "code": "018680",
-        "name": "018680",
+        "name": "Seoul Pharma Co., Ltd",
         "market": "KOSDAQ",
         "close": 2170,
         "volume": 19456,
@@ -1105,7 +1105,7 @@
       },
       {
         "code": "007330",
-        "name": "007330",
+        "name": "Pureun Savings Bank",
         "market": "KOSDAQ",
         "close": 10090,
         "volume": 126883,
@@ -1115,7 +1115,7 @@
       },
       {
         "code": "306200",
-        "name": "306200",
+        "name": "SeAH Steel Corporation",
         "market": "KOSPI",
         "close": 141000,
         "volume": 31694,
@@ -1125,7 +1125,7 @@
       },
       {
         "code": "377450",
-        "name": "377450",
+        "name": "REFINE Co., Ltd.",
         "market": "KOSDAQ",
         "close": 9410,
         "volume": 95148,
@@ -1135,7 +1135,7 @@
       },
       {
         "code": "073190",
-        "name": "073190",
+        "name": "Duoback Co., Ltd.",
         "market": "KOSDAQ",
         "close": 690,
         "volume": 117056,
@@ -1145,7 +1145,7 @@
       },
       {
         "code": "014470",
-        "name": "014470",
+        "name": "Bubang Co., Ltd.",
         "market": "KOSDAQ",
         "close": 1128,
         "volume": 867171,
@@ -1155,7 +1155,7 @@
       },
       {
         "code": "035200",
-        "name": "035200",
+        "name": "PlumbFast Co., Ltd.",
         "market": "KOSDAQ",
         "close": 2920,
         "volume": 200947,
@@ -1165,7 +1165,7 @@
       },
       {
         "code": "134060",
-        "name": "134060",
+        "name": "e-future.Co.,Ltd.",
         "market": "KOSDAQ",
         "close": 4225,
         "volume": 25599,
@@ -1175,7 +1175,7 @@
       },
       {
         "code": "008500",
-        "name": "008500",
+        "name": "Iljeong Industrial Co.,Ltd",
         "market": "KOSPI",
         "close": 1847,
         "volume": 149708,
@@ -1185,7 +1185,7 @@
       },
       {
         "code": "045660",
-        "name": "045660",
+        "name": "Atec Co. Ltd.",
         "market": "KOSDAQ",
         "close": 8160,
         "volume": 104141,
@@ -1195,7 +1195,7 @@
       },
       {
         "code": "466410",
-        "name": "466410",
+        "name": "Synapsoft Corp",
         "market": "KOSDAQ",
         "close": 8840,
         "volume": 62056,
@@ -1205,7 +1205,7 @@
       },
       {
         "code": "054920",
-        "name": "054920",
+        "name": "HancomWITH Inc.",
         "market": "KOSDAQ",
         "close": 4185,
         "volume": 4436880,
@@ -1215,7 +1215,7 @@
       },
       {
         "code": "002810",
-        "name": "002810",
+        "name": "Samyung Trading Co., Ltd.",
         "market": "KOSPI",
         "close": 21100,
         "volume": 55690,
@@ -1225,7 +1225,7 @@
       },
       {
         "code": "148930",
-        "name": "148930",
+        "name": "Hytc Co., Ltd",
         "market": "KOSDAQ",
         "close": 2720,
         "volume": 97391,
@@ -1235,7 +1235,7 @@
       },
       {
         "code": "484870",
-        "name": "484870",
+        "name": "MNC Solution",
         "market": "KOSPI",
         "close": 60100,
         "volume": 51395,
@@ -1245,7 +1245,7 @@
       },
       {
         "code": "160980",
-        "name": "160980",
+        "name": "CYMECHS Inc.",
         "market": "KOSDAQ",
         "close": 34850,
         "volume": 347611,
@@ -1255,7 +1255,7 @@
       },
       {
         "code": "088340",
-        "name": "088340",
+        "name": "URACLE",
         "market": "KOSDAQ",
         "close": 7700,
         "volume": 123941,
@@ -1265,7 +1265,7 @@
       },
       {
         "code": "089600",
-        "name": "089600",
+        "name": "kt nasmedia Co., Ltd.",
         "market": "KOSDAQ",
         "close": 9820,
         "volume": 45864,
@@ -1277,7 +1277,7 @@
     "volume_and_high": [
       {
         "code": "457370",
-        "name": "457370",
+        "name": "Hanchem Co,. Ltd.",
         "market": "KOSDAQ",
         "close": 13050,
         "volume": 14459952,
@@ -1287,7 +1287,7 @@
       },
       {
         "code": "040350",
-        "name": "040350",
+        "name": "CreoSG Co.,Ltd.",
         "market": "KOSDAQ",
         "close": 9890,
         "volume": 1152687,
@@ -1297,7 +1297,7 @@
       },
       {
         "code": "047080",
-        "name": "047080",
+        "name": "HANBIT SOFT Inc.",
         "market": "KOSDAQ",
         "close": 1580,
         "volume": 3142899,
@@ -1307,7 +1307,7 @@
       },
       {
         "code": "001740",
-        "name": "001740",
+        "name": "SK Networks Company Limited",
         "market": "KOSPI",
         "close": 14170,
         "volume": 56474937,
@@ -1319,7 +1319,7 @@
     "trading_value_top": [
       {
         "code": "000660",
-        "name": "000660",
+        "name": "SK hynix Inc.",
         "market": "KOSPI",
         "close": 1911000,
         "volume": 6509776,
@@ -1331,7 +1331,7 @@
       },
       {
         "code": "005930",
-        "name": "005930",
+        "name": "Samsung Electronics Co., Ltd.",
         "market": "KOSPI",
         "close": 295500,
         "volume": 38467019,
@@ -1343,7 +1343,7 @@
       },
       {
         "code": "035420",
-        "name": "035420",
+        "name": "NAVER Corporation",
         "market": "KOSPI",
         "close": 279000,
         "volume": 10148390,
@@ -1355,7 +1355,7 @@
       },
       {
         "code": "009150",
-        "name": "009150",
+        "name": "Samsung Electro-Mechanics Co., Ltd.",
         "market": "KOSPI",
         "close": 1664000,
         "volume": 1260963,
@@ -1367,7 +1367,7 @@
       },
       {
         "code": "066570",
-        "name": "066570",
+        "name": "LG Electronics Inc.",
         "market": "KOSPI",
         "close": 268000,
         "volume": 4271907,
@@ -1379,7 +1379,7 @@
       },
       {
         "code": "402340",
-        "name": "402340",
+        "name": "SK Square Co., Ltd.",
         "market": "KOSPI",
         "close": 1118000,
         "volume": 859805,
@@ -1391,7 +1391,7 @@
       },
       {
         "code": "005935",
-        "name": "005935",
+        "name": "Samsung Electronics Co., Ltd.",
         "market": "KOSPI",
         "close": 192500,
         "volume": 4751566,
@@ -1403,7 +1403,7 @@
       },
       {
         "code": "005380",
-        "name": "005380",
+        "name": "Hyundai Motor Company",
         "market": "KOSPI",
         "close": 639000,
         "volume": 1331406,
@@ -1415,7 +1415,7 @@
       },
       {
         "code": "001740",
-        "name": "001740",
+        "name": "SK Networks Company Limited",
         "market": "KOSPI",
         "close": 14170,
         "volume": 56474937,
@@ -1427,7 +1427,7 @@
       },
       {
         "code": "011070",
-        "name": "011070",
+        "name": "LG Innotek Co., Ltd.",
         "market": "KOSPI",
         "close": 1095000,
         "volume": 504487,
@@ -1439,7 +1439,7 @@
       },
       {
         "code": "454910",
-        "name": "454910",
+        "name": "Doosan Robotics Inc.",
         "market": "KOSPI",
         "close": 127200,
         "volume": 3883639,
@@ -1451,7 +1451,7 @@
       },
       {
         "code": "017670",
-        "name": "017670",
+        "name": "SK Telecom Co., Ltd.",
         "market": "KOSPI",
         "close": 106700,
         "volume": 4492964,
@@ -1463,7 +1463,7 @@
       },
       {
         "code": "012330",
-        "name": "012330",
+        "name": "Hyundai Mobis Co.,Ltd",
         "market": "KOSPI",
         "close": 612000,
         "volume": 773309,
@@ -1475,7 +1475,7 @@
       },
       {
         "code": "105560",
-        "name": "105560",
+        "name": "KB Financial Group Inc.",
         "market": "KOSPI",
         "close": 151500,
         "volume": 2334850,
@@ -1487,7 +1487,7 @@
       },
       {
         "code": "034020",
-        "name": "034020",
+        "name": "Doosan Enerbility Co., Ltd.",
         "market": "KOSPI",
         "close": 85800,
         "volume": 3956048,
@@ -1499,7 +1499,7 @@
       },
       {
         "code": "006400",
-        "name": "006400",
+        "name": "Samsung SDI Co., Ltd.",
         "market": "KOSPI",
         "close": 503000,
         "volume": 624954,
@@ -1511,7 +1511,7 @@
       },
       {
         "code": "064400",
-        "name": "064400",
+        "name": "LG CNS",
         "market": "KOSPI",
         "close": 106500,
         "volume": 2536006,
@@ -1523,7 +1523,7 @@
       },
       {
         "code": "329180",
-        "name": "329180",
+        "name": "HD Hyundai Heavy Industries Co., Ltd.",
         "market": "KOSPI",
         "close": 621000,
         "volume": 401352,
@@ -1535,7 +1535,7 @@
       },
       {
         "code": "042700",
-        "name": "042700",
+        "name": "HANMI Semiconductor Co., Ltd.",
         "market": "KOSPI",
         "close": 253500,
         "volume": 954331,
@@ -1547,7 +1547,7 @@
       },
       {
         "code": "028260",
-        "name": "028260",
+        "name": "Samsung C&T Corporation",
         "market": "KOSPI",
         "close": 408500,
         "volume": 541802,
@@ -1559,7 +1559,7 @@
       },
       {
         "code": "006800",
-        "name": "006800",
+        "name": "Mirae Asset Securities Co., Ltd.",
         "market": "KOSPI",
         "close": 49750,
         "volume": 4409363,
@@ -1571,7 +1571,7 @@
       },
       {
         "code": "055550",
-        "name": "055550",
+        "name": "Shinhan Financial Group Co., Ltd.",
         "market": "KOSPI",
         "close": 97100,
         "volume": 2158180,
@@ -1583,7 +1583,7 @@
       },
       {
         "code": "032830",
-        "name": "032830",
+        "name": "Samsung Life Insurance Co., Ltd.",
         "market": "KOSPI",
         "close": 375500,
         "volume": 551825,
@@ -1595,7 +1595,7 @@
       },
       {
         "code": "000150",
-        "name": "000150",
+        "name": "Doosan Corporation",
         "market": "KOSPI",
         "close": 1578000,
         "volume": 131047,
@@ -1607,7 +1607,7 @@
       },
       {
         "code": "000270",
-        "name": "000270",
+        "name": "Kia Corporation",
         "market": "KOSPI",
         "close": 151400,
         "volume": 1305489,
@@ -1619,7 +1619,7 @@
       },
       {
         "code": "373220",
-        "name": "373220",
+        "name": "LG Energy Solution, Ltd.",
         "market": "KOSPI",
         "close": 388500,
         "volume": 422550,
@@ -1631,7 +1631,7 @@
       },
       {
         "code": "012450",
-        "name": "012450",
+        "name": "Hanwha Aerospace Co., Ltd.",
         "market": "KOSPI",
         "close": 1006000,
         "volume": 162007,
@@ -1643,7 +1643,7 @@
       },
       {
         "code": "018260",
-        "name": "018260",
+        "name": "Samsung SDS Co., Ltd.",
         "market": "KOSPI",
         "close": 236000,
         "volume": 675986,
@@ -1655,7 +1655,7 @@
       },
       {
         "code": "298040",
-        "name": "298040",
+        "name": "Hyosung Heavy Industries Corporation",
         "market": "KOSPI",
         "close": 3196000,
         "volume": 46945,
@@ -1667,7 +1667,7 @@
       },
       {
         "code": "005490",
-        "name": "005490",
+        "name": "POSCO Holdings Inc.",
         "market": "KOSPI",
         "close": 359000,
         "volume": 411313,
@@ -1679,7 +1679,7 @@
       },
       {
         "code": "080220",
-        "name": "080220",
+        "name": "Jeju Semiconductor Corp.",
         "market": "KOSDAQ",
         "close": 95500,
         "volume": 4649253,
@@ -1691,7 +1691,7 @@
       },
       {
         "code": "036930",
-        "name": "036930",
+        "name": "JUSUNG ENGINEERING Co.,Ltd.",
         "market": "KOSDAQ",
         "close": 182800,
         "volume": 1943322,
@@ -1703,7 +1703,7 @@
       },
       {
         "code": "090360",
-        "name": "090360",
+        "name": "Robostar Co., Ltd.",
         "market": "KOSDAQ",
         "close": 139000,
         "volume": 1997772,
@@ -1715,7 +1715,7 @@
       },
       {
         "code": "403870",
-        "name": "403870",
+        "name": "HPSP Co., Ltd.",
         "market": "KOSDAQ",
         "close": 47150,
         "volume": 4418177,
@@ -1727,7 +1727,7 @@
       },
       {
         "code": "457370",
-        "name": "457370",
+        "name": "Hanchem Co,. Ltd.",
         "market": "KOSDAQ",
         "close": 13050,
         "volume": 14459952,
@@ -1739,7 +1739,7 @@
       },
       {
         "code": "240810",
-        "name": "240810",
+        "name": "Wonik IPS Co., Ltd.",
         "market": "KOSDAQ",
         "close": 104900,
         "volume": 1615054,
@@ -1751,7 +1751,7 @@
       },
       {
         "code": "196170",
-        "name": "196170",
+        "name": "ALTEOGEN Inc.",
         "market": "KOSDAQ",
         "close": 289500,
         "volume": 571827,
@@ -1763,7 +1763,7 @@
       },
       {
         "code": "010170",
-        "name": "010170",
+        "name": "Taihan Fiber Optics Co., Ltd",
         "market": "KOSDAQ",
         "close": 16580,
         "volume": 9890933,
@@ -1775,7 +1775,7 @@
       },
       {
         "code": "043260",
-        "name": "043260",
+        "name": "Sungho Electronics Corp.",
         "market": "KOSDAQ",
         "close": 41700,
         "volume": 3252312,
@@ -1787,7 +1787,7 @@
       },
       {
         "code": "440110",
-        "name": "440110",
+        "name": "FADU Inc.",
         "market": "KOSDAQ",
         "close": 106600,
         "volume": 1213558,
@@ -1799,7 +1799,7 @@
       },
       {
         "code": "086520",
-        "name": "086520",
+        "name": "Ecopro Co., Ltd.",
         "market": "KOSDAQ",
         "close": 105200,
         "volume": 1221353,
@@ -1811,7 +1811,7 @@
       },
       {
         "code": "000250",
-        "name": "000250",
+        "name": "Sam Chun Dang Pharm. Co., Ltd",
         "market": "KOSDAQ",
         "close": 239000,
         "volume": 439281,
@@ -1823,7 +1823,7 @@
       },
       {
         "code": "247540",
-        "name": "247540",
+        "name": "EcoPro BM Co., Ltd.",
         "market": "KOSDAQ",
         "close": 159700,
         "volume": 651414,
@@ -1835,7 +1835,7 @@
       },
       {
         "code": "388790",
-        "name": "388790",
+        "name": "IBKS No.16 Special Purpose Acquisition Company",
         "market": "KOSDAQ",
         "close": 6750,
         "volume": 14963135,
@@ -1847,7 +1847,7 @@
       },
       {
         "code": "347850",
-        "name": "347850",
+        "name": "D&D Pharmatech",
         "market": "KOSDAQ",
         "close": 78600,
         "volume": 1228042,
@@ -1859,7 +1859,7 @@
       },
       {
         "code": "277810",
-        "name": "277810",
+        "name": "Rainbow Robotics Co.,Ltd.",
         "market": "KOSDAQ",
         "close": 610000,
         "volume": 146380,
@@ -1871,7 +1871,7 @@
       },
       {
         "code": "319660",
-        "name": "319660",
+        "name": "PSK Inc.",
         "market": "KOSDAQ",
         "close": 111200,
         "volume": 733025,
@@ -1883,7 +1883,7 @@
       },
       {
         "code": "058470",
-        "name": "058470",
+        "name": "LEENO Industrial Inc.",
         "market": "KOSDAQ",
         "close": 85100,
         "volume": 930242,
@@ -1895,7 +1895,7 @@
       },
       {
         "code": "108490",
-        "name": "108490",
+        "name": "ROBOTIS Co., Ltd.",
         "market": "KOSDAQ",
         "close": 289500,
         "volume": 264960,
@@ -1907,7 +1907,7 @@
       },
       {
         "code": "066430",
-        "name": "066430",
+        "name": "I-ROBOTICS,Co.,Ltd.",
         "market": "KOSDAQ",
         "close": 4270,
         "volume": 17880785,
@@ -1919,7 +1919,7 @@
       },
       {
         "code": "100790",
-        "name": "100790",
+        "name": "Mirae Asset Venture Investment Co., Ltd.",
         "market": "KOSDAQ",
         "close": 38150,
         "volume": 1907188,
@@ -1931,7 +1931,7 @@
       },
       {
         "code": "178320",
-        "name": "178320",
+        "name": "Seojin System Co.,Ltd",
         "market": "KOSDAQ",
         "close": 65000,
         "volume": 1114821,
@@ -1943,7 +1943,7 @@
       },
       {
         "code": "222800",
-        "name": "222800",
+        "name": "SIMMTECH Co., Ltd.",
         "market": "KOSDAQ",
         "close": 100000,
         "volume": 689477,
@@ -1955,7 +1955,7 @@
       },
       {
         "code": "095610",
-        "name": "095610",
+        "name": "TES Co., Ltd",
         "market": "KOSDAQ",
         "close": 131500,
         "volume": 519868,
@@ -1967,7 +1967,7 @@
       },
       {
         "code": "039030",
-        "name": "039030",
+        "name": "EO Technics Co., Ltd.",
         "market": "KOSDAQ",
         "close": 396500,
         "volume": 172277,
@@ -1979,7 +1979,7 @@
       },
       {
         "code": "242040",
-        "name": "242040",
+        "name": "Namu Tech Co.,Ltd.",
         "market": "KOSDAQ",
         "close": 8400,
         "volume": 8056249,
@@ -1991,7 +1991,7 @@
       },
       {
         "code": "141080",
-        "name": "141080",
+        "name": "LigaChem Biosciences Inc.",
         "market": "KOSDAQ",
         "close": 116500,
         "volume": 529839,
@@ -2003,7 +2003,7 @@
       },
       {
         "code": "089030",
-        "name": "089030",
+        "name": "Techwing, Inc.",
         "market": "KOSDAQ",
         "close": 49350,
         "volume": 1155474,
@@ -2015,7 +2015,7 @@
       },
       {
         "code": "087010",
-        "name": "087010",
+        "name": "Peptron, Inc.",
         "market": "KOSDAQ",
         "close": 230500,
         "volume": 246258,
@@ -2027,7 +2027,7 @@
       },
       {
         "code": "090710",
-        "name": "090710",
+        "name": "Hyulim ROBOT Co.,Ltd.",
         "market": "KOSDAQ",
         "close": 9970,
         "volume": 5693049,
