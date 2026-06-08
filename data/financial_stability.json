@@ -1,12 +1,11 @@
 {
-  "date": "2026-06-05",
+  "date": "2026-06-08",
   "source": "아이투자 (itooza.com)",
   "high_52w": [
-    {"name": "미래에셋생명", "price": 21250,  "change_pct": 9.5,  "high_52w": 23300,  "stability": 3},
-    {"name": "신한지주",     "price": 106400, "change_pct": 6.3,  "high_52w": 109800, "stability": 3},
-    {"name": "현대백화점",   "price": 148000, "change_pct": 5.9,  "high_52w": 153500, "stability": 3},
-    {"name": "KB금융",       "price": 171600, "change_pct": 4.5,  "high_52w": 175700, "stability": 3},
-    {"name": "신세계",       "price": 672000, "change_pct": 2.0,  "high_52w": 722000, "stability": 2},
-    {"name": "롯데쇼핑",     "price": 171200, "change_pct": -0.5, "high_52w": 180200, "stability": 2}
+    {"name": "화신정공",   "price": 2625,  "change_pct": 30.0, "high_52w": 2625,  "stability": 5},
+    {"name": "크레오에스지","price": 8500,  "change_pct": 8.7,  "high_52w": 9040,  "stability": 2},
+    {"name": "한빛소프트", "price": 1641,  "change_pct": 1.9,  "high_52w": 1800,  "stability": 5},
+    {"name": "한켐",       "price": 14740, "change_pct": 0.5,  "high_52w": 15460, "stability": 5},
+    {"name": "피에스케이", "price": 122300,"change_pct": -3.3, "high_52w": 132700,"stability": 5}
   ]
 }
