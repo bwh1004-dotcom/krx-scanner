@@ -1,16 +1,11 @@
 {
-  "date": "2026-06-10",
+  "date": "2026-06-11",
   "source": "아이투자 (itooza.com)",
   "high_52w": [
-    {"name": "화신정공",      "price": 4095,  "change_pct": 20.1, "high_52w": 4340,  "stability": 5},
-    {"name": "피에스케이홀딩스","price": 144400,"change_pct": 15.5, "high_52w": 144900,"stability": 5},
-    {"name": "테스",          "price": 185000,"change_pct": 14.6, "high_52w": 185000,"stability": 5},
-    {"name": "피에스케이",    "price": 156900,"change_pct": 13.5, "high_52w": 158000,"stability": 5},
-    {"name": "한빛소프트",    "price": 1835,  "change_pct": 8.5,  "high_52w": 1942,  "stability": 5},
-    {"name": "브이엠",        "price": 81800, "change_pct": 6.8,  "high_52w": 83600, "stability": 5},
-    {"name": "엘티씨",        "price": 53600, "change_pct": 5.1,  "high_52w": 54400, "stability": 4},
-    {"name": "롯데쇼핑",      "price": 190000,"change_pct": 4.5,  "high_52w": 194800,"stability": 2},
-    {"name": "더블유게임즈",  "price": 72600, "change_pct": 0.8,  "high_52w": 74700, "stability": 5},
-    {"name": "대원강업",      "price": 5990,  "change_pct": -0.2, "high_52w": 6150,  "stability": 3}
+    {"name": "화신정공",   "price": 5750,  "change_pct": 29.8, "high_52w": 5750,  "stability": 5},
+    {"name": "코미코",     "price": 121300,"change_pct": 13.3, "high_52w": 123700,"stability": 3},
+    {"name": "크레오에스지","price": 11180, "change_pct": 12.9, "high_52w": 11180, "stability": 2},
+    {"name": "롯데쇼핑",   "price": 195500,"change_pct": 0.0,  "high_52w": 199400,"stability": 3},
+    {"name": "후성",       "price": 16010, "change_pct": -1.4, "high_52w": 16990, "stability": 2}
   ]
 }
