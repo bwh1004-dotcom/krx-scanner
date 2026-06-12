@@ -1,11 +1,29 @@
 {
-  "date": "2026-06-11",
+  "date": "2026-06-12",
   "source": "아이투자 (itooza.com)",
   "high_52w": [
-    {"name": "화신정공",   "price": 5750,  "change_pct": 29.8, "high_52w": 5750,  "stability": 5},
-    {"name": "코미코",     "price": 121300,"change_pct": 13.3, "high_52w": 123700,"stability": 3},
-    {"name": "크레오에스지","price": 11180, "change_pct": 12.9, "high_52w": 11180, "stability": 2},
-    {"name": "롯데쇼핑",   "price": 195500,"change_pct": 0.0,  "high_52w": 199400,"stability": 3},
-    {"name": "후성",       "price": 16010, "change_pct": -1.4, "high_52w": 16990, "stability": 2}
+    {"name": "후성",         "price": 19800,  "change_pct": 25.6,  "high_52w": 19850,  "stability": 2},
+    {"name": "아스플로",     "price": 22300,  "change_pct": 20.4,  "high_52w": 22700,  "stability": 0},
+    {"name": "미래산업",     "price": 45750,  "change_pct": 16.7,  "high_52w": 46200,  "stability": 5},
+    {"name": "샘씨엔에스",   "price": 16340,  "change_pct": 13.3,  "high_52w": 16530,  "stability": 4},
+    {"name": "에이팩트",     "price": 11280,  "change_pct": 10.9,  "high_52w": 11480,  "stability": 2},
+    {"name": "원익IPS",      "price": 154000, "change_pct": 9.2,   "high_52w": 163100, "stability": 3},
+    {"name": "메카로",       "price": 43450,  "change_pct": 8.8,   "high_52w": 43700,  "stability": 5},
+    {"name": "피에스케이",   "price": 158700, "change_pct": 5.9,   "high_52w": 171800, "stability": 5},
+    {"name": "브이엠",       "price": 89700,  "change_pct": 5.4,   "high_52w": 99400,  "stability": 5},
+    {"name": "케이씨텍",     "price": 79800,  "change_pct": 4.5,   "high_52w": 83500,  "stability": 5},
+    {"name": "싸이맥스",     "price": 44800,  "change_pct": 2.9,   "high_52w": 47000,  "stability": 5},
+    {"name": "주성엔지니어링","price": 251000, "change_pct": 2.2,   "high_52w": 283000, "stability": 3},
+    {"name": "타이거일렉",   "price": 75800,  "change_pct": 1.7,   "high_52w": 78300,  "stability": 3},
+    {"name": "티에스이",     "price": 262500, "change_pct": 1.0,   "high_52w": 274000, "stability": 4},
+    {"name": "피에스케이홀딩스","price": 134700,"change_pct": 0.6,  "high_52w": 151000, "stability": 5},
+    {"name": "심텍",         "price": 132100, "change_pct": -0.9,  "high_52w": 143300, "stability": 2},
+    {"name": "유진테크",     "price": 175500, "change_pct": -1.6,  "high_52w": 195000, "stability": 5},
+    {"name": "신세계",       "price": 688000, "change_pct": -3.6,  "high_52w": 744000, "stability": 2},
+    {"name": "롯데쇼핑",     "price": 194400, "change_pct": -3.8,  "high_52w": 206000, "stability": 3},
+    {"name": "엘티씨",       "price": 55300,  "change_pct": -4.3,  "high_52w": 60700,  "stability": 4},
+    {"name": "크레오에스지", "price": 11320,  "change_pct": -5.3,  "high_52w": 12800,  "stability": 2},
+    {"name": "현대백화점",   "price": 174600, "change_pct": -6.7,  "high_52w": 187800, "stability": 3},
+    {"name": "인텍플러스",   "price": 40350,  "change_pct": -8.3,  "high_52w": 44950,  "stability": 2}
   ]
 }
