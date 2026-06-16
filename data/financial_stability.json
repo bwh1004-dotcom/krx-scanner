@@ -1,14 +1,18 @@
 {
-  "date": "2026-06-15",
+  "date": "2026-06-16",
   "source": "아이투자 (itooza.com)",
   "high_52w": [
-    {"name": "서산",      "price": 2195,    "change_pct": 29.9, "high_52w": 2195,    "stability": 4},
-    {"name": "대한항공",  "price": 29850,   "change_pct": 12.2, "high_52w": 30000,   "stability": 2},
-    {"name": "후성",      "price": 19770,   "change_pct": 4.0,  "high_52w": 20950,   "stability": 2},
-    {"name": "SK스퀘어",  "price": 1405000, "change_pct": 3.5,  "high_52w": 1444000, "stability": 5},
-    {"name": "에이팩트",  "price": 11850,   "change_pct": 3.0,  "high_52w": 12900,   "stability": 2},
-    {"name": "HPSP",      "price": 72200,   "change_pct": 1.0,  "high_52w": 72800,   "stability": 5},
-    {"name": "KT&G",      "price": 188100,  "change_pct": 0.2,  "high_52w": 192000,  "stability": 3},
-    {"name": "타이거일렉","price": 78100,   "change_pct": -0.8, "high_52w": 82000,   "stability": 3}
+    {"name": "서산",       "price": 2850,    "change_pct": 29.8, "high_52w": 2850,    "stability": 4},
+    {"name": "화신정공",   "price": 6140,    "change_pct": 16.7, "high_52w": 6830,    "stability": 5},
+    {"name": "케이씨텍",   "price": 97000,   "change_pct": 13.1, "high_52w": 99400,   "stability": 5},
+    {"name": "인텍플러스", "price": 45250,   "change_pct": 9.6,  "high_52w": 45600,   "stability": 2},
+    {"name": "네패스",     "price": 38700,   "change_pct": 7.8,  "high_52w": 41150,   "stability": 2},
+    {"name": "현대백화점", "price": 195400,  "change_pct": 6.7,  "high_52w": 196000,  "stability": 3},
+    {"name": "프리엠스",   "price": 8570,    "change_pct": 6.5,  "high_52w": 10310,   "stability": 4},
+    {"name": "KB금융",     "price": 179800,  "change_pct": 6.0,  "high_52w": 181900,  "stability": 3},
+    {"name": "하나금융지주","price": 133300,  "change_pct": 3.1,  "high_52w": 134000,  "stability": 3},
+    {"name": "아스플로",   "price": 22200,   "change_pct": 2.1,  "high_52w": 23500,   "stability": 0},
+    {"name": "SK스퀘어",   "price": 1435000, "change_pct": 1.6,  "high_52w": 1457000, "stability": 5},
+    {"name": "KT&G",       "price": 190400,  "change_pct": 1.0,  "high_52w": 192400,  "stability": 3}
   ]
 }
