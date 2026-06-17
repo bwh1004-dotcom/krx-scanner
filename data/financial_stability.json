@@ -1,18 +1,15 @@
 {
-  "date": "2026-06-16",
+  "date": "2026-06-17",
   "source": "아이투자 (itooza.com)",
   "high_52w": [
-    {"name": "서산",       "price": 2850,    "change_pct": 29.8, "high_52w": 2850,    "stability": 4},
-    {"name": "화신정공",   "price": 6140,    "change_pct": 16.7, "high_52w": 6830,    "stability": 5},
-    {"name": "케이씨텍",   "price": 97000,   "change_pct": 13.1, "high_52w": 99400,   "stability": 5},
-    {"name": "인텍플러스", "price": 45250,   "change_pct": 9.6,  "high_52w": 45600,   "stability": 2},
-    {"name": "네패스",     "price": 38700,   "change_pct": 7.8,  "high_52w": 41150,   "stability": 2},
-    {"name": "현대백화점", "price": 195400,  "change_pct": 6.7,  "high_52w": 196000,  "stability": 3},
-    {"name": "프리엠스",   "price": 8570,    "change_pct": 6.5,  "high_52w": 10310,   "stability": 4},
-    {"name": "KB금융",     "price": 179800,  "change_pct": 6.0,  "high_52w": 181900,  "stability": 3},
-    {"name": "하나금융지주","price": 133300,  "change_pct": 3.1,  "high_52w": 134000,  "stability": 3},
-    {"name": "아스플로",   "price": 22200,   "change_pct": 2.1,  "high_52w": 23500,   "stability": 0},
-    {"name": "SK스퀘어",   "price": 1435000, "change_pct": 1.6,  "high_52w": 1457000, "stability": 5},
-    {"name": "KT&G",       "price": 190400,  "change_pct": 1.0,  "high_52w": 192400,  "stability": 3}
+    {"name": "서산",       "price": 3705,    "change_pct": 30.0, "high_52w": 3705,    "stability": 4},
+    {"name": "화신",       "price": 15540,   "change_pct": 10.9, "high_52w": 16720,   "stability": 2},
+    {"name": "SK스퀘어",   "price": 1563000, "change_pct": 4.1,  "high_52w": 1612000, "stability": 5},
+    {"name": "화신정공",   "price": 7110,    "change_pct": 4.1,  "high_52w": 7880,    "stability": 5},
+    {"name": "롯데쇼핑",   "price": 201500,  "change_pct": 1.8,  "high_52w": 211000,  "stability": 3},
+    {"name": "SK하이닉스", "price": 2393000, "change_pct": 0.5,  "high_52w": 2421000, "stability": 4},
+    {"name": "현대백화점", "price": 192900,  "change_pct": -2.8, "high_52w": 202500,  "stability": 3},
+    {"name": "신세계",     "price": 732000,  "change_pct": -4.6, "high_52w": 784000,  "stability": 2},
+    {"name": "HL만도",     "price": 71800,   "change_pct": -6.6, "high_52w": 79100,   "stability": 3}
   ]
 }
