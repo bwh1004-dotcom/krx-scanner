@@ -1,16 +1,18 @@
 {
-  "date": "2026-06-18",
+  "date": "2026-06-19",
   "source": "아이투자 (itooza.com)",
   "high_52w": [
-    {"name": "삼화콘덴서",   "price": 179900,  "change_pct": 18.8,  "high_52w": 182000,  "stability": 4},
-    {"name": "강동씨앤엘",   "price": 1664,    "change_pct": 16.4,  "high_52w": 1850,    "stability": 2},
-    {"name": "삼성전기",     "price": 2181000, "change_pct": 7.3,   "high_52w": 2195000, "stability": 4},
-    {"name": "현대백화점",   "price": 218000,  "change_pct": 5.3,   "high_52w": 221500,  "stability": 3},
-    {"name": "SK하이닉스",   "price": 2619000, "change_pct": 3.9,   "high_52w": 2636000, "stability": 4},
-    {"name": "SK스퀘어",     "price": 1652000, "change_pct": 3.5,   "high_52w": 1699000, "stability": 5},
-    {"name": "신세계",       "price": 777000,  "change_pct": 3.2,   "high_52w": 792000,  "stability": 2},
-    {"name": "서산",         "price": 3810,    "change_pct": 2.8,   "high_52w": 4330,    "stability": 4},
-    {"name": "와이지-원",    "price": 20850,   "change_pct": 2.7,   "high_52w": 21800,   "stability": 2},
-    {"name": "한솔테크닉스", "price": 13780,   "change_pct": -10.2, "high_52w": 15800,   "stability": 3}
+    {"name": "한울반도체",   "price": 17820,   "change_pct": 30.0, "high_52w": 17820,   "stability": 1},
+    {"name": "강동씨앤엘",   "price": 2415,    "change_pct": 29.9, "high_52w": 2415,    "stability": 2},
+    {"name": "지오엘리먼트", "price": 10900,   "change_pct": 24.0, "high_52w": 11250,   "stability": 5},
+    {"name": "남화토건",     "price": 5260,    "change_pct": 14.5, "high_52w": 5850,    "stability": 4},
+    {"name": "삼성생명",     "price": 513000,  "change_pct": 9.4,  "high_52w": 514000,  "stability": 4},
+    {"name": "와이지-원",    "price": 23800,   "change_pct": 8.7,  "high_52w": 25300,   "stability": 2},
+    {"name": "SK",           "price": 740000,  "change_pct": 7.7,  "high_52w": 746000,  "stability": 3},
+    {"name": "SK스퀘어",     "price": 1826000, "change_pct": 7.4,  "high_52w": 1840000, "stability": 5},
+    {"name": "삼성전기",     "price": 2319000, "change_pct": 5.4,  "high_52w": 2358000, "stability": 4},
+    {"name": "SK하이닉스",   "price": 2808000, "change_pct": 4.6,  "high_52w": 2850000, "stability": 4},
+    {"name": "인바디",       "price": 48300,   "change_pct": 4.1,  "high_52w": 50000,   "stability": 5},
+    {"name": "삼성전자",     "price": 370000,  "change_pct": 2.1,  "high_52w": 374500,  "stability": 5}
   ]
 }
