@@ -1,18 +1,13 @@
 {
-  "date": "2026-06-19",
+  "date": "2026-06-22",
   "source": "아이투자 (itooza.com)",
   "high_52w": [
-    {"name": "한울반도체",   "price": 17820,   "change_pct": 30.0, "high_52w": 17820,   "stability": 1},
-    {"name": "강동씨앤엘",   "price": 2415,    "change_pct": 29.9, "high_52w": 2415,    "stability": 2},
-    {"name": "지오엘리먼트", "price": 10900,   "change_pct": 24.0, "high_52w": 11250,   "stability": 5},
-    {"name": "남화토건",     "price": 5260,    "change_pct": 14.5, "high_52w": 5850,    "stability": 4},
-    {"name": "삼성생명",     "price": 513000,  "change_pct": 9.4,  "high_52w": 514000,  "stability": 4},
-    {"name": "와이지-원",    "price": 23800,   "change_pct": 8.7,  "high_52w": 25300,   "stability": 2},
-    {"name": "SK",           "price": 740000,  "change_pct": 7.7,  "high_52w": 746000,  "stability": 3},
-    {"name": "SK스퀘어",     "price": 1826000, "change_pct": 7.4,  "high_52w": 1840000, "stability": 5},
-    {"name": "삼성전기",     "price": 2319000, "change_pct": 5.4,  "high_52w": 2358000, "stability": 4},
-    {"name": "SK하이닉스",   "price": 2808000, "change_pct": 4.6,  "high_52w": 2850000, "stability": 4},
-    {"name": "인바디",       "price": 48300,   "change_pct": 4.1,  "high_52w": 50000,   "stability": 5},
-    {"name": "삼성전자",     "price": 370000,  "change_pct": 2.1,  "high_52w": 374500,  "stability": 5}
+    {"name": "한울반도체",   "price": 21700,  "change_pct": 21.8, "high_52w": 22300,  "stability": 1},
+    {"name": "보해양조",     "price": 2515,   "change_pct": 18.1, "high_52w": 2765,   "stability": 3},
+    {"name": "피에스케이",   "price": 190900, "change_pct": 15.7, "high_52w": 192100, "stability": 5},
+    {"name": "JW신약",       "price": 2665,   "change_pct": 14.1, "high_52w": 2860,   "stability": 4},
+    {"name": "기가비스",     "price": 156100, "change_pct": 12.3, "high_52w": 162600, "stability": 4},
+    {"name": "강동씨앤엘",   "price": 2690,   "change_pct": 11.4, "high_52w": 2900,   "stability": 2},
+    {"name": "지오엘리먼트", "price": 11180,  "change_pct": 8.9,  "high_52w": 11320,  "stability": 5}
   ]
 }
