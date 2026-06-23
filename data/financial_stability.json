@@ -1,13 +1,15 @@
 {
-  "date": "2026-06-22",
+  "date": "2026-06-23",
   "source": "아이투자 (itooza.com)",
   "high_52w": [
-    {"name": "한울반도체",   "price": 21700,  "change_pct": 21.8, "high_52w": 22300,  "stability": 1},
-    {"name": "보해양조",     "price": 2515,   "change_pct": 18.1, "high_52w": 2765,   "stability": 3},
-    {"name": "피에스케이",   "price": 190900, "change_pct": 15.7, "high_52w": 192100, "stability": 5},
-    {"name": "JW신약",       "price": 2665,   "change_pct": 14.1, "high_52w": 2860,   "stability": 4},
-    {"name": "기가비스",     "price": 156100, "change_pct": 12.3, "high_52w": 162600, "stability": 4},
-    {"name": "강동씨앤엘",   "price": 2690,   "change_pct": 11.4, "high_52w": 2900,   "stability": 2},
-    {"name": "지오엘리먼트", "price": 11180,  "change_pct": 8.9,  "high_52w": 11320,  "stability": 5}
+    {"name": "서산",        "price": 8120,    "change_pct": 29.9,  "high_52w": 8120,    "stability": 4},
+    {"name": "JW신약",      "price": 3200,    "change_pct": 17.2,  "high_52w": 3300,    "stability": 4},
+    {"name": "한울반도체",  "price": 26550,   "change_pct": 14.7,  "high_52w": 29050,   "stability": 1},
+    {"name": "보해양조",    "price": 2650,    "change_pct": 13.3,  "high_52w": 2875,    "stability": 3},
+    {"name": "SK",          "price": 788000,  "change_pct": 8.0,   "high_52w": 796000,  "stability": 3},
+    {"name": "SK스퀘어",    "price": 2070000, "change_pct": 5.1,   "high_52w": 2189000, "stability": 5},
+    {"name": "기가비스",    "price": 158900,  "change_pct": -0.2,  "high_52w": 168000,  "stability": 4},
+    {"name": "크린앤사이언스","price": 3945,  "change_pct": -0.3,  "high_52w": 4740,    "stability": 1},
+    {"name": "지오엘리먼트","price": 11120,   "change_pct": -0.9,  "high_52w": 11920,   "stability": 5}
   ]
 }
