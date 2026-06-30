@@ -1,13 +1,19 @@
 {
-  "date": "2026-06-29",
+  "date": "2026-06-30",
   "source": "아이투자 (itooza.com)",
   "high_52w": [
-    {"name": "동양파일",   "price": 3695,  "change_pct": 29.9, "high_52w": 3695,  "stability": 4},
-    {"name": "금호건설",   "price": 8610,  "change_pct": 29.9, "high_52w": 8610,  "stability": 4},
-    {"name": "남화토건",   "price": 8660,  "change_pct": 29.6, "high_52w": 8660,  "stability": 4},
-    {"name": "인바디",     "price": 48700, "change_pct": 7.9,  "high_52w": 50900, "stability": 5},
-    {"name": "SM C&C",     "price": 1650,  "change_pct": 7.2,  "high_52w": 1681,  "stability": 2},
-    {"name": "기가비스",   "price": 172000,"change_pct": 3.2,  "high_52w": 175800,"stability": 4},
-    {"name": "광주신세계", "price": 49800, "change_pct": -5.9, "high_52w": 55700, "stability": 3}
+    {"name": "동양파일",     "price": 4800,  "change_pct": 29.9,  "high_52w": 4800,  "stability": 4},
+    {"name": "케이씨텍",     "price": 111500,"change_pct": 22.7,  "high_52w": 116400,"stability": 5},
+    {"name": "미래산업",     "price": 56600, "change_pct": 22.0,  "high_52w": 60300, "stability": 5},
+    {"name": "테스",         "price": 204500,"change_pct": 13.8,  "high_52w": 214500,"stability": 5},
+    {"name": "피에스케이홀딩스","price": 151600,"change_pct": 12.6,"high_52w": 157900,"stability": 5},
+    {"name": "인바디",       "price": 58100, "change_pct": 10.5,  "high_52w": 58800, "stability": 5},
+    {"name": "피에스케이",   "price": 190900,"change_pct": 7.4,   "high_52w": 201500,"stability": 5},
+    {"name": "금호건설",     "price": 9190,  "change_pct": 6.7,   "high_52w": 9940,  "stability": 4},
+    {"name": "기가비스",     "price": 182900,"change_pct": 4.2,   "high_52w": 186900,"stability": 4},
+    {"name": "브이엠",       "price": 109900,"change_pct": 3.6,   "high_52w": 116300,"stability": 5},
+    {"name": "블루콤",       "price": 3930,  "change_pct": 1.0,   "high_52w": 4075,  "stability": 3},
+    {"name": "SM C&C",       "price": 1721,  "change_pct": -3.6,  "high_52w": 1900,  "stability": 2},
+    {"name": "남화산업",     "price": 5440,  "change_pct": -14.6, "high_52w": 6900,  "stability": 5}
   ]
 }
