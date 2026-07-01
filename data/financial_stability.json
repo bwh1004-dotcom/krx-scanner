@@ -1,19 +1,24 @@
 {
-  "date": "2026-06-30",
+  "date": "2026-07-01",
   "source": "아이투자 (itooza.com)",
   "high_52w": [
-    {"name": "동양파일",     "price": 4800,  "change_pct": 29.9,  "high_52w": 4800,  "stability": 4},
-    {"name": "케이씨텍",     "price": 111500,"change_pct": 22.7,  "high_52w": 116400,"stability": 5},
-    {"name": "미래산업",     "price": 56600, "change_pct": 22.0,  "high_52w": 60300, "stability": 5},
-    {"name": "테스",         "price": 204500,"change_pct": 13.8,  "high_52w": 214500,"stability": 5},
-    {"name": "피에스케이홀딩스","price": 151600,"change_pct": 12.6,"high_52w": 157900,"stability": 5},
-    {"name": "인바디",       "price": 58100, "change_pct": 10.5,  "high_52w": 58800, "stability": 5},
-    {"name": "피에스케이",   "price": 190900,"change_pct": 7.4,   "high_52w": 201500,"stability": 5},
-    {"name": "금호건설",     "price": 9190,  "change_pct": 6.7,   "high_52w": 9940,  "stability": 4},
-    {"name": "기가비스",     "price": 182900,"change_pct": 4.2,   "high_52w": 186900,"stability": 4},
-    {"name": "브이엠",       "price": 109900,"change_pct": 3.6,   "high_52w": 116300,"stability": 5},
-    {"name": "블루콤",       "price": 3930,  "change_pct": 1.0,   "high_52w": 4075,  "stability": 3},
-    {"name": "SM C&C",       "price": 1721,  "change_pct": -3.6,  "high_52w": 1900,  "stability": 2},
-    {"name": "남화산업",     "price": 5440,  "change_pct": -14.6, "high_52w": 6900,  "stability": 5}
+    {"name": "동양파일",   "price": 6240,  "change_pct": 30.0, "high_52w": 6240,  "stability": 4},
+    {"name": "금호건설",   "price": 14540, "change_pct": 29.9, "high_52w": 14540, "stability": 4},
+    {"name": "남화토건",   "price": 9110,  "change_pct": 22.9, "high_52w": 9110,  "stability": 4},
+    {"name": "유진테크",   "price": 216000,"change_pct": 16.3, "high_52w": 218000,"stability": 5},
+    {"name": "금호전기",   "price": 1354,  "change_pct": 15.3, "high_52w": 1488,  "stability": 1},
+    {"name": "테스",       "price": 230500,"change_pct": 10.8, "high_52w": 230500,"stability": 5},
+    {"name": "원익IPS",    "price": 185300,"change_pct": 10.2, "high_52w": 185300,"stability": 3},
+    {"name": "로스웰",     "price": 1818,  "change_pct": 10.1, "high_52w": 2145,  "stability": 3},
+    {"name": "피에스케이", "price": 211500,"change_pct": 7.9,  "high_52w": 213500,"stability": 5},
+    {"name": "브이엠",     "price": 117100,"change_pct": 7.1,  "high_52w": 118000,"stability": 5},
+    {"name": "아스플로",   "price": 23700, "change_pct": 6.8,  "high_52w": 24000, "stability": 0},
+    {"name": "미래산업",   "price": 64000, "change_pct": 6.1,  "high_52w": 67000, "stability": 5},
+    {"name": "심텍",       "price": 157800,"change_pct": 6.1,  "high_52w": 159100,"stability": 2},
+    {"name": "한성크린텍", "price": 2600,  "change_pct": 4.6,  "high_52w": 2700,  "stability": 2},
+    {"name": "세보엠이씨", "price": 28100, "change_pct": 3.5,  "high_52w": 28300, "stability": 5},
+    {"name": "케이씨텍",   "price": 118800,"change_pct": 3.2,  "high_52w": 120100,"stability": 5},
+    {"name": "기가비스",   "price": 194500,"change_pct": 1.2,  "high_52w": 206000,"stability": 4},
+    {"name": "골프존홀딩스","price": 6640, "change_pct": 0.2,  "high_52w": 6670,  "stability": 2}
   ]
 }
