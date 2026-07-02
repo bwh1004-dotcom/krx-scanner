@@ -1,24 +1,15 @@
 {
-  "date": "2026-07-01",
+  "date": "2026-07-02",
   "source": "아이투자 (itooza.com)",
   "high_52w": [
-    {"name": "동양파일",   "price": 6240,  "change_pct": 30.0, "high_52w": 6240,  "stability": 4},
-    {"name": "금호건설",   "price": 14540, "change_pct": 29.9, "high_52w": 14540, "stability": 4},
-    {"name": "남화토건",   "price": 9110,  "change_pct": 22.9, "high_52w": 9110,  "stability": 4},
-    {"name": "유진테크",   "price": 216000,"change_pct": 16.3, "high_52w": 218000,"stability": 5},
-    {"name": "금호전기",   "price": 1354,  "change_pct": 15.3, "high_52w": 1488,  "stability": 1},
-    {"name": "테스",       "price": 230500,"change_pct": 10.8, "high_52w": 230500,"stability": 5},
-    {"name": "원익IPS",    "price": 185300,"change_pct": 10.2, "high_52w": 185300,"stability": 3},
-    {"name": "로스웰",     "price": 1818,  "change_pct": 10.1, "high_52w": 2145,  "stability": 3},
-    {"name": "피에스케이", "price": 211500,"change_pct": 7.9,  "high_52w": 213500,"stability": 5},
-    {"name": "브이엠",     "price": 117100,"change_pct": 7.1,  "high_52w": 118000,"stability": 5},
-    {"name": "아스플로",   "price": 23700, "change_pct": 6.8,  "high_52w": 24000, "stability": 0},
-    {"name": "미래산업",   "price": 64000, "change_pct": 6.1,  "high_52w": 67000, "stability": 5},
-    {"name": "심텍",       "price": 157800,"change_pct": 6.1,  "high_52w": 159100,"stability": 2},
-    {"name": "한성크린텍", "price": 2600,  "change_pct": 4.6,  "high_52w": 2700,  "stability": 2},
-    {"name": "세보엠이씨", "price": 28100, "change_pct": 3.5,  "high_52w": 28300, "stability": 5},
-    {"name": "케이씨텍",   "price": 118800,"change_pct": 3.2,  "high_52w": 120100,"stability": 5},
-    {"name": "기가비스",   "price": 194500,"change_pct": 1.2,  "high_52w": 206000,"stability": 4},
-    {"name": "골프존홀딩스","price": 6640, "change_pct": 0.2,  "high_52w": 6670,  "stability": 2}
+    {"name": "광진실업",   "price": 6140,  "change_pct": 22.8, "high_52w": 6390,  "stability": 1},
+    {"name": "남광토건",   "price": 12390, "change_pct": 19.8, "high_52w": 13050, "stability": 4},
+    {"name": "금호건설",   "price": 17330, "change_pct": 19.2, "high_52w": 18900, "stability": 4},
+    {"name": "삼호개발",   "price": 4960,  "change_pct": 17.1, "high_52w": 5390,  "stability": 5},
+    {"name": "남화토건",   "price": 10760, "change_pct": 11.7, "high_52w": 12190, "stability": 4},
+    {"name": "한국콜마",   "price": 117300,"change_pct": 9.8,  "high_52w": 119800,"stability": 3},
+    {"name": "한성크린텍", "price": 2740,  "change_pct": 6.4,  "high_52w": 2740,  "stability": 2},
+    {"name": "금호전기",   "price": 1430,  "change_pct": 3.0,  "high_52w": 1518,  "stability": 1},
+    {"name": "동양파일",   "price": 6270,  "change_pct": 0.5,  "high_52w": 7300,  "stability": 4}
   ]
 }
