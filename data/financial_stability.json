@@ -1,15 +1,9 @@
 {
-  "date": "2026-07-02",
+  "date": "2026-07-06",
   "source": "아이투자 (itooza.com)",
   "high_52w": [
-    {"name": "광진실업",   "price": 6140,  "change_pct": 22.8, "high_52w": 6390,  "stability": 1},
-    {"name": "남광토건",   "price": 12390, "change_pct": 19.8, "high_52w": 13050, "stability": 4},
-    {"name": "금호건설",   "price": 17330, "change_pct": 19.2, "high_52w": 18900, "stability": 4},
-    {"name": "삼호개발",   "price": 4960,  "change_pct": 17.1, "high_52w": 5390,  "stability": 5},
-    {"name": "남화토건",   "price": 10760, "change_pct": 11.7, "high_52w": 12190, "stability": 4},
-    {"name": "한국콜마",   "price": 117300,"change_pct": 9.8,  "high_52w": 119800,"stability": 3},
-    {"name": "한성크린텍", "price": 2740,  "change_pct": 6.4,  "high_52w": 2740,  "stability": 2},
-    {"name": "금호전기",   "price": 1430,  "change_pct": 3.0,  "high_52w": 1518,  "stability": 1},
-    {"name": "동양파일",   "price": 6270,  "change_pct": 0.5,  "high_52w": 7300,  "stability": 4}
+    {"name": "와이지-원",  "price": 25800, "change_pct": 14.2, "high_52w": 26650, "stability": 2},
+    {"name": "한국공항",   "price": 89600, "change_pct": 0.0,  "high_52w": 95900, "stability": 5},
+    {"name": "동원개발",   "price": 2905,  "change_pct": -7.8, "high_52w": 3630,  "stability": 2}
   ]
 }
