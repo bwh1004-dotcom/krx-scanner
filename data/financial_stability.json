@@ -1,9 +1,7 @@
 {
-  "date": "2026-07-06",
+  "date": "2026-07-08",
   "source": "아이투자 (itooza.com)",
   "high_52w": [
-    {"name": "와이지-원",  "price": 25800, "change_pct": 14.2, "high_52w": 26650, "stability": 2},
-    {"name": "한국공항",   "price": 89600, "change_pct": 0.0,  "high_52w": 95900, "stability": 5},
-    {"name": "동원개발",   "price": 2905,  "change_pct": -7.8, "high_52w": 3630,  "stability": 2}
+    {"name": "씨이랩", "price": 12620, "change_pct": 30.0, "high_52w": 12620, "stability": 3}
   ]
 }
