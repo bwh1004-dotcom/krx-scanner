@@ -1,23 +1,23 @@
 {
-  "date": "2026-07-08",
+  "date": "2026-07-09",
   "source": "아이투자 (itooza.com)",
   "today": {
-    "buffett_index": 228.8,
-    "change_point": -13.0,
-    "change_pct": -5.37,
-    "kospi_market_cap": 5931,
-    "kosdaq_market_cap": 442,
+    "buffett_index": 230.2,
+    "change_point": 1.4,
+    "change_pct": 0.61,
+    "kospi_market_cap": 5965,
+    "kosdaq_market_cap": 447,
     "gdp": 2785
   },
   "stats_3y": {
     "high": 287.0,
     "low": 84.9,
-    "avg": 124.0
+    "avg": 124.1
   },
   "evaluation": [
-    { "label": "과대평가", "index": 120, "kospi": 3800.08, "kosdaq": 411.64 },
-    { "label": "고평가",   "index": 100, "kospi": 3166.74, "kosdaq": 343.03 },
-    { "label": "저평가",   "index": 80,  "kospi": 2533.39, "kosdaq": 274.43 },
-    { "label": "과소평가", "index": 60,  "kospi": 1900.04, "kosdaq": 205.82 }
+    { "label": "과대평가", "index": 120, "kospi": 3800.49, "kosdaq": 413.83 },
+    { "label": "고평가",   "index": 100, "kospi": 3167.08, "kosdaq": 344.86 },
+    { "label": "저평가",   "index": 80,  "kospi": 2533.66, "kosdaq": 275.88 },
+    { "label": "과소평가", "index": 60,  "kospi": 1900.25, "kosdaq": 206.91 }
   ]
 }
