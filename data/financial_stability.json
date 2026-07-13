@@ -1,10 +1,11 @@
 {
-  "date": "2026-07-10",
+  "date": "2026-07-13",
   "source": "아이투자 (itooza.com)",
   "high_52w": [
-    {"name": "한성기업",    "price": 8460,  "change_pct": 30.0, "high_52w": 8460,  "stability": 2},
-    {"name": "KB금융",      "price": 183450,"change_pct": 7.0,  "high_52w": 185900,"stability": 3},
-    {"name": "신한지주",    "price": 109800,"change_pct": 4.6,  "high_52w": 111500,"stability": 3},
-    {"name": "데이타솔루션","price": 7780,  "change_pct": 0.8,  "high_52w": 8490,  "stability": 4}
+    {"name": "한성기업", "price": 9880,  "change_pct": 16.8, "high_52w": 10990, "stability": 2},
+    {"name": "티에스이", "price": 284000,"change_pct": 5.4,  "high_52w": 294000,"stability": 4},
+    {"name": "KB금융",   "price": 189800,"change_pct": 2.9,  "high_52w": 191000,"stability": 3},
+    {"name": "신한지주", "price": 112100,"change_pct": 2.7,  "high_52w": 113300,"stability": 3},
+    {"name": "금호타이어","price": 7400,  "change_pct": -5.1, "high_52w": 7840,  "stability": 3}
   ]
 }
