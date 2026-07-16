@@ -1,11 +1,12 @@
 {
-  "date": "2026-07-13",
+  "date": "2026-07-16",
   "source": "아이투자 (itooza.com)",
   "high_52w": [
-    {"name": "한성기업", "price": 9880,  "change_pct": 16.8, "high_52w": 10990, "stability": 2},
-    {"name": "티에스이", "price": 284000,"change_pct": 5.4,  "high_52w": 294000,"stability": 4},
-    {"name": "KB금융",   "price": 189800,"change_pct": 2.9,  "high_52w": 191000,"stability": 3},
-    {"name": "신한지주", "price": 112100,"change_pct": 2.7,  "high_52w": 113300,"stability": 3},
-    {"name": "금호타이어","price": 7400,  "change_pct": -5.1, "high_52w": 7840,  "stability": 3}
+    {"name": "모나미",         "price": 4475,  "change_pct": 29.9, "high_52w": 4475,  "stability": 1},
+    {"name": "동화약품",       "price": 6990,  "change_pct": 16.3, "high_52w": 7560,  "stability": 2},
+    {"name": "롯데렌탈",       "price": 37000, "change_pct": 8.8,  "high_52w": 37050, "stability": 2},
+    {"name": "하나금융지주",   "price": 139700,"change_pct": 2.1,  "high_52w": 142500,"stability": 3},
+    {"name": "솔본",           "price": 4610,  "change_pct": 2.0,  "high_52w": 4670,  "stability": 5},
+    {"name": "인피니트헬스케어","price": 9200,  "change_pct": 0.7,  "high_52w": 9740,  "stability": 5}
   ]
 }
