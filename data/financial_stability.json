@@ -1,9 +1,9 @@
 {
-  "date": "2026-07-21",
+  "date": "2026-07-22",
   "source": "아이투자 (itooza.com)",
   "high_52w": [
-    {"name": "가비아",      "price": 47450, "change_pct": 7.7,  "high_52w": 47550, "stability": 4},
-    {"name": "벡트",        "price": 3450,  "change_pct": 6.8,  "high_52w": 3550,  "stability": 1},
-    {"name": "자이에스앤디","price": 5430,  "change_pct": -1.3, "high_52w": 6040,  "stability": 5}
+    {"name": "롯데렌탈",    "price": 38050, "change_pct": 3.7,  "high_52w": 38050, "stability": 2},
+    {"name": "자이에스앤디","price": 6080,  "change_pct": 1.3,  "high_52w": 6190,  "stability": 5},
+    {"name": "대정화금",    "price": 14550, "change_pct": -0.6, "high_52w": 14810, "stability": 5}
   ]
 }
