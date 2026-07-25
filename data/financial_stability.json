@@ -1,9 +1,11 @@
 {
-  "date": "2026-07-22",
+  "date": "2026-07-24",
   "source": "아이투자 (itooza.com)",
   "high_52w": [
-    {"name": "롯데렌탈",    "price": 38050, "change_pct": 3.7,  "high_52w": 38050, "stability": 2},
-    {"name": "자이에스앤디","price": 6080,  "change_pct": 1.3,  "high_52w": 6190,  "stability": 5},
-    {"name": "대정화금",    "price": 14550, "change_pct": -0.6, "high_52w": 14810, "stability": 5}
+    {"name": "지엔씨에너지", "price": 51600, "change_pct": 13.3, "high_52w": 51900, "stability": 5},
+    {"name": "롯데렌탈",     "price": 41250, "change_pct": 3.3,  "high_52w": 41250, "stability": 2},
+    {"name": "DSR제강",      "price": 5840,  "change_pct": 1.0,  "high_52w": 5950,  "stability": 3},
+    {"name": "이퓨쳐",       "price": 4820,  "change_pct": 0.5,  "high_52w": 5020,  "stability": 4},
+    {"name": "SK이터닉스",   "price": 80000, "change_pct": -0.7, "high_52w": 82500, "stability": 1}
   ]
 }
