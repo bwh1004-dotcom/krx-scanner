@@ -1,11 +1,8 @@
 {
-  "date": "2026-07-27",
+  "date": "2026-07-28",
   "source": "아이투자 (itooza.com)",
   "high_52w": [
-    {"name": "우진아이엔에스", "price": 4910,  "change_pct": 2.9, "high_52w": 4995,  "stability": 4},
-    {"name": "삼영무역",       "price": 23400, "change_pct": 2.2, "high_52w": 23900, "stability": 4},
-    {"name": "블루콤",         "price": 4690,  "change_pct": 1.5, "high_52w": 4895,  "stability": 3},
-    {"name": "DSR",            "price": 4730,  "change_pct": 0.9, "high_52w": 4800,  "stability": 3},
-    {"name": "대정화금",       "price": 14970, "change_pct": 0.7, "high_52w": 15150, "stability": 5}
+    {"name": "블루콤",   "price": 4830, "change_pct": -0.4, "high_52w": 4950, "stability": 3},
+    {"name": "대륙제관", "price": 4105, "change_pct": -2.3, "high_52w": 4250, "stability": 5}
   ]
 }
