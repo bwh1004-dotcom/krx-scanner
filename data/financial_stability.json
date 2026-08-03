@@ -1,7 +1,9 @@
 {
-  "date": "2026-07-31",
+  "date": "2026-08-03",
   "source": "아이투자 (itooza.com)",
   "high_52w": [
-    {"name": "슈프리마에이치큐", "price": 14220, "change_pct": 1.9, "high_52w": 14800, "stability": 0}
+    {"name": "벡트",      "price": 3630, "change_pct": 6.6, "high_52w": 3800, "stability": 1},
+    {"name": "아이크래프트","price": 4860, "change_pct": 5.2, "high_52w": 4925, "stability": 4},
+    {"name": "블루콤",    "price": 4865, "change_pct": 4.7, "high_52w": 4975, "stability": 3}
   ]
 }
