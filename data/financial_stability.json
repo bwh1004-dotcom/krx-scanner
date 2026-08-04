@@ -1,9 +1,10 @@
 {
-  "date": "2026-08-03",
+  "date": "2026-08-04",
   "source": "아이투자 (itooza.com)",
   "high_52w": [
-    {"name": "벡트",      "price": 3630, "change_pct": 6.6, "high_52w": 3800, "stability": 1},
-    {"name": "아이크래프트","price": 4860, "change_pct": 5.2, "high_52w": 4925, "stability": 4},
-    {"name": "블루콤",    "price": 4865, "change_pct": 4.7, "high_52w": 4975, "stability": 3}
+    {"name": "아이크래프트", "price": 6160,  "change_pct": 18.7, "high_52w": 6200,  "stability": 4},
+    {"name": "아이비김영",   "price": 2915,  "change_pct": 1.2,  "high_52w": 2965,  "stability": 4},
+    {"name": "사조씨푸드",   "price": 10590, "change_pct": 0.2,  "high_52w": 10980, "stability": 2},
+    {"name": "블루콤",       "price": 5150,  "change_pct": -0.2, "high_52w": 5250,  "stability": 3}
   ]
 }
