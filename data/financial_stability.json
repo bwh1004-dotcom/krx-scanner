@@ -1,10 +1,12 @@
 {
-  "date": "2026-08-04",
+  "date": "2026-08-05",
   "source": "아이투자 (itooza.com)",
   "high_52w": [
-    {"name": "아이크래프트", "price": 6160,  "change_pct": 18.7, "high_52w": 6200,  "stability": 4},
-    {"name": "아이비김영",   "price": 2915,  "change_pct": 1.2,  "high_52w": 2965,  "stability": 4},
-    {"name": "사조씨푸드",   "price": 10590, "change_pct": 0.2,  "high_52w": 10980, "stability": 2},
-    {"name": "블루콤",       "price": 5150,  "change_pct": -0.2, "high_52w": 5250,  "stability": 3}
+    {"name": "자이에스앤디", "price": 8330,  "change_pct": 8.6,  "high_52w": 8710,  "stability": 5},
+    {"name": "벡트",         "price": 3830,  "change_pct": 4.1,  "high_52w": 3965,  "stability": 1},
+    {"name": "GS",           "price": 97300, "change_pct": 0.4,  "high_52w": 101900,"stability": 4},
+    {"name": "KISCO홀딩스",  "price": 28050, "change_pct": -0.2, "high_52w": 28500, "stability": 4},
+    {"name": "사조씨푸드",   "price": 10870, "change_pct": -1.0, "high_52w": 11000, "stability": 2},
+    {"name": "아이비김영",   "price": 2965,  "change_pct": -1.2, "high_52w": 3010,  "stability": 4}
   ]
 }
