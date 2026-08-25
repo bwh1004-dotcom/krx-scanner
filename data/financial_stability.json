@@ -1,17 +1,13 @@
 {
-  "date": "2026-08-12",
+  "date": "2026-08-25",
   "source": "아이투자 (itooza.com)",
   "high_52w": [
-    {"name": "한국콜마",     "price": 126700,"change_pct": 17.4, "high_52w": 128600,"stability": 3},
-    {"name": "코스맥스",     "price": 245500,"change_pct": 16.9, "high_52w": 249500,"stability": 3},
-    {"name": "코스메카코리아","price": 121500,"change_pct": 11.1, "high_52w": 121900,"stability": 3},
-    {"name": "본느",         "price": 8700,  "change_pct": 7.9,  "high_52w": 9050,  "stability": 3},
-    {"name": "코스맥스비티아이","price": 27600,"change_pct": 7.8, "high_52w": 28500, "stability": 2},
-    {"name": "GS",           "price": 103600,"change_pct": 6.3,  "high_52w": 106400,"stability": 4},
-    {"name": "JW홀딩스",     "price": 4265,  "change_pct": 5.1,  "high_52w": 4720,  "stability": 3},
-    {"name": "마녀공장",     "price": 18990, "change_pct": -0.7, "high_52w": 19420, "stability": 5},
-    {"name": "네오팜",       "price": 25100, "change_pct": -1.4, "high_52w": 25600, "stability": 5},
-    {"name": "까뮤이앤씨",   "price": 1643,  "change_pct": -1.6, "high_52w": 1690,  "stability": 3},
-    {"name": "이퓨쳐",       "price": 5000,  "change_pct": -3.3, "high_52w": 5320,  "stability": 4}
+    {"name": "탑코미디어", "price": 3025,  "change_pct": 8.6,  "high_52w": 3290,  "stability": 4},
+    {"name": "빙그레",     "price": 92000, "change_pct": 4.6,  "high_52w": 92200, "stability": 4},
+    {"name": "키다리스튜디오","price": 5270,"change_pct": 3.3,  "high_52w": 5400,  "stability": 4},
+    {"name": "KPX홀딩스",  "price": 100200,"change_pct": 2.5,  "high_52w": 100800,"stability": 4},
+    {"name": "한국콜마",   "price": 146200,"change_pct": 2.0,  "high_52w": 147600,"stability": 3},
+    {"name": "대정화금",   "price": 14960, "change_pct": 0.4,  "high_52w": 15210, "stability": 5},
+    {"name": "현대해상",   "price": 50300, "change_pct": -0.6, "high_52w": 50900, "stability": 4}
   ]
 }
