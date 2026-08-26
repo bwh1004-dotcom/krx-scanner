@@ -1,13 +1,13 @@
 {
-  "date": "2026-08-25",
+  "date": "2026-08-26",
   "source": "아이투자 (itooza.com)",
   "high_52w": [
-    {"name": "탑코미디어", "price": 3025,  "change_pct": 8.6,  "high_52w": 3290,  "stability": 4},
-    {"name": "빙그레",     "price": 92000, "change_pct": 4.6,  "high_52w": 92200, "stability": 4},
-    {"name": "키다리스튜디오","price": 5270,"change_pct": 3.3,  "high_52w": 5400,  "stability": 4},
-    {"name": "KPX홀딩스",  "price": 100200,"change_pct": 2.5,  "high_52w": 100800,"stability": 4},
-    {"name": "한국콜마",   "price": 146200,"change_pct": 2.0,  "high_52w": 147600,"stability": 3},
-    {"name": "대정화금",   "price": 14960, "change_pct": 0.4,  "high_52w": 15210, "stability": 5},
-    {"name": "현대해상",   "price": 50300, "change_pct": -0.6, "high_52w": 50900, "stability": 4}
+    {"name": "넥사다이내믹스",  "price": 1900,  "change_pct": 14.8, "high_52w": 1990,  "stability": 1},
+    {"name": "키다리스튜디오",  "price": 6000,  "change_pct": 8.1,  "high_52w": 6390,  "stability": 4},
+    {"name": "레이언스",        "price": 7990,  "change_pct": 4.7,  "high_52w": 8020,  "stability": 4},
+    {"name": "롯데웰푸드",      "price": 140000,"change_pct": 3.6,  "high_52w": 140500,"stability": 3},
+    {"name": "빙그레",          "price": 92400, "change_pct": 2.2,  "high_52w": 93400, "stability": 4},
+    {"name": "한국콜마",        "price": 151900,"change_pct": 1.3,  "high_52w": 153400,"stability": 3},
+    {"name": "나이스정보통신",  "price": 7590,  "change_pct": 0.5,  "high_52w": 7600,  "stability": 4}
   ]
 }
