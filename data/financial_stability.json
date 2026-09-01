@@ -1,11 +1,15 @@
 {
-  "date": "2026-08-28",
+  "date": "2026-09-01",
   "source": "아이투자 (itooza.com)",
   "high_52w": [
-    {"name": "넥사다이내믹스", "price": 2785,  "change_pct": 9.2,  "high_52w": 2990,  "stability": 1},
-    {"name": "코스메카코리아", "price": 145500,"change_pct": 4.7,  "high_52w": 148200,"stability": 3},
-    {"name": "제닉",           "price": 34750, "change_pct": 2.8,  "high_52w": 35350, "stability": 4},
-    {"name": "유아이디",       "price": 1224,  "change_pct": 0.4,  "high_52w": 1270,  "stability": 4},
-    {"name": "벡트",           "price": 5000,  "change_pct": -0.2, "high_52w": 5200,  "stability": 1}
+    {"name": "넥사다이내믹스", "price": 3275,  "change_pct": 11.6, "high_52w": 3445,  "stability": 1},
+    {"name": "금호전기",       "price": 13910, "change_pct": 11.5, "high_52w": 14350, "stability": 1},
+    {"name": "나이스정보통신", "price": 8000,  "change_pct": 6.7,  "high_52w": 8060,  "stability": 4},
+    {"name": "현대해상",       "price": 53600, "change_pct": 5.3,  "high_52w": 53700, "stability": 4},
+    {"name": "써니전자",       "price": 2460,  "change_pct": 3.8,  "high_52w": 2590,  "stability": 5},
+    {"name": "벡트",           "price": 5630,  "change_pct": 2.9,  "high_52w": 5700,  "stability": 1},
+    {"name": "키다리스튜디오", "price": 7100,  "change_pct": 1.6,  "high_52w": 7340,  "stability": 4},
+    {"name": "에이피알",       "price": 469000,"change_pct": 1.0,  "high_52w": 475000,"stability": 5},
+    {"name": "코스맥스",       "price": 294500,"change_pct": -1.8, "high_52w": 306500,"stability": 2}
   ]
 }
